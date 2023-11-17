@@ -2,8 +2,6 @@
 ![1700242687193](https://github.com/kysgattu/kysgattu/assets/42197976/f012dd0b-6c57-48ee-acc0-e0f0dea427f2)
 
 
-
-
 ### Hi there! You happened to stumble upon the profile of.....
 
 # KAMAL YESHODHAR SHASTRY GATTU
