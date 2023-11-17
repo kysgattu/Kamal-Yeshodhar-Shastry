@@ -1,21 +1,15 @@
+
+![1700242687193](https://github.com/kysgattu/kysgattu/assets/42197976/f012dd0b-6c57-48ee-acc0-e0f0dea427f2)
+
+
+
+
 ### Hi there! You happened to stumble upon the profile of.....
 
-<!--
-**kysgattu/kysgattu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-
 # KAMAL YESHODHAR SHASTRY GATTU
+#### A Machine Learning and Data Science Enthusiast: Exploring the Field of Data Analysis, Deep Learning and Machine Learning Tools
+
+
 [📖 Master of Science in Computer Science](https://www.uml.edu/Sciences/computer-science/)
 <br>
 [🎓 Bachelor of Technology in Computer Science & Engineering](https://tkrec.ac.in/department-cse/)
@@ -24,10 +18,16 @@ Here are some ideas to get you started:
 <br>
 🔎 LinkedIn  : [https://www.linkedin.com/in/kysgattu](https://www.linkedin.com/in/kysgattu)
 <br>
-[🔗 Click me for Resume](https://kysgattu.github.io/Kamal-Yeshodhar-Shastry/) 
+[🔗 Click me for Resume](Files/Resume.pdf) 
 
 
 ## I have done these!!!
+
+### 📌 [Pedestrian Detection System using YOLO](https://github.com/kysgattu/Pedestrian-Detection-System)
+- Developed a Pedestrian Detection System for the University of Massachusetts Lowell's Campus Planning Department.
+- Utilized advanced Machine Learning Techniques and the formidable YOLO Deep Learning Algorithm to accurately count individuals on specific campus pathways.
+- Introduced a user-friendly interface to enable users to effortlessly upload videos and define detection regions.
+- The system seamlessly executes real-time detection, tracking, and tallying of pedestrians, elevating the Campus Planning Department's efficiency in managing pedestrian flow and reduced 90% manual time.
 
 ### 📌 [Chest X-Ray Classification to detect COVID-19 using Deep Neural Networks](https://github.com/kysgattu/Chest-X-Ray-Classification-to-detect-COVID-19-using-Deep-Neural-Networks)
 - Developed a reliable method for detecting COVID-19 in patients by analyzing chest X-rays using Deep Learning systems.
@@ -58,22 +58,22 @@ Here are some ideas to get you started:
 ### 📌 [User Knowledge Modelling ](https://github.com/kysgattu/User-Knowledge-Modelling)
 - Developing a Machine Learning model for predicting the students’ knowledge status about the subject of Electrical DC Machines based on certain constraints.
 
-## And I know these.....
+## Talk to me about these.....
 
 - **_💻 Programming Languages:_**  Python, Java, C, C+
-- **_💻 Python Libraries:_**   NumPy, Pandas, Scikit-learn, Keras, OpenCV, Matplotlib, Seaborn 
+- **_💻 Python Libraries:_**   NumPy, Pandas, Scikit-learn, Keras, PyTorch OpenCV, Matplotlib, Seaborn, NLTK 
 - **_💻 Database:_**  MySQL, PostgreSQL, Amazon Redshift
 - **_💻 ETL Tools:_** Informatica PowerCenter, Informatica Intelligent Cloud Services (IICS)
 - **_💻 Web Designing:_** HTML, CSS, JavaScript, JSP
 - **_💻 Operating Systems:_** Unix, Windows
 - **_💻 IDE:_** Eclipse, NetBeans, PyCharm, Jupyter
-- **_💻 Others:_** GitHub, MS Office
+- **_💻 Others:_** GitHub, MS Office, REST API, Microsoft PowerApps
 
 
 
 ## I worked with them.....
 
-- **💼 University of Massachusetts Lowell** _Facilities Informations Systems Assistant/Intern (Python/REST API Developer)_
+- **💼 University of Massachusetts Lowell** _Facilities Informations Systems Assistant/Intern (Python/REST API Developer; Machine Learning Tools expert)_
 - **💼 Cognizant Technology Solutions Pvt Ltd, Hyderabad** _Programmer Analyst Trainee (Data Integration - ETL Developer)_
 - **💼 Electronics Corporation of India Ltd., Hyderabad** _Java Trainee &amp; Intern_ 
 - **💼 SmartBridge Educational Services Pvt. Ltd.** _Machine Learning Trainee &amp; Intern_
