@@ -5,27 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kamal Yeshodhar Shastry Gattu</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 20px auto;
-            padding: 20px;
-            max-width: 800px;
-            border: 2px solid #007BFF;
+            padding: 10px;
+            max-width: 842px;
+            background-image: url("Files/background.jpeg");
+            background-size: cover; /* Ensure the background image covers the entire container */
+            background-repeat: no-repeat; /* Prevent the background image from repeating */
+            color: #fff; /* Light Text */
+            /*display: flex;*/
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+        }
+        #profile-section {
+            display: flex;
+            /*align-items: center;*/
+            margin-bottom: 5px;
+        }
+
+        #profile-picture {
+            width: 150px; /* Adjust the size as needed */
+            height: 150px;
             border-radius: 10px;
-            background-color: #f2f2f2;
-            color: #333;
+            object-fit: cover;
+            /*margin: auto 20px 0px 20px; !* Centered and adds space below *!*/
+            margin-bottom: 0px;
+            margin-left: 178px;
+            margin-right: 0px;
+            margin-top: 0px;
+            display: block;
+            border: 1px solid #4494ff; /* Green Border */
+        }
+
+        #contact{
+            align-items: center;
         }
 
         h1,
         h2 {
-            color: #007BFF;
+            color: #4494ff; /* Green Text */
         }
 
         p {
-            margin: 10px 0;
+            margin: 1px 0;
         }
 
         ul {
@@ -39,13 +65,13 @@
 
         a {
             text-decoration: none;
-            color: #007BFF;
+            color: #4494ff; /* Green Text */
             transition: color 0.3s ease;
         }
 
         a:hover {
             text-decoration: underline;
-            color: #0056b3;
+            color: #45a049; /* Slightly Darker Green */
         }
 
         .contact-icons {
@@ -54,17 +80,16 @@
         }
 
         .section-box {
-            border: 2px solid #007BFF;
-            background-color: #fff;
+            background-color: #333; /* Dark Gray */
             border-radius: 10px;
-            padding: 15px;
-            margin-bottom: 20px;
+            padding: 20px;
+            margin-bottom: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .box-title {
             font-weight: bold;
-            color: #007BFF;
+            color: #4494ff; /* Green Text */
         }
 
         .italicize {
@@ -72,7 +97,7 @@
         }
 
         .fade-text {
-            color: #555;
+            color: #888; /* Lighter Gray Text */
         }
 
         .bullets {
@@ -83,6 +108,9 @@
         .tree {
             list-style: none;
             padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            /*flex-wrap: wrap;*/
         }
 
         .tree-item {
@@ -90,6 +118,10 @@
             cursor: pointer;
             user-select: none;
             font-weight: bold;
+            margin-bottom: 10px; /* Add space below each tree-item */
+            margin-right: 10px; /* Add space to the right of each tree-item */
+            flex: 0 0 calc(33.33% - 20px); /* Set the width to one-third with margins */
+            max-width: calc(33.33% - 20px); /* Set the maximum width */
         }
 
         .tree-item:before {
@@ -97,7 +129,7 @@
             position: absolute;
             left: -15px;
             top: 2px;
-            color: #007BFF;
+            color: #4494ff; /* Green Text */
             font-size: 0.8em;
             transition: transform 0.3s ease, color 0.3s ease;
             font-weight: bold;
@@ -105,7 +137,7 @@
 
         .tree-item.collapsed:before {
             transform: rotate(90deg);
-            color: #0056b3;
+            color: #45a049; /* Slightly Darker Green */
         }
 
         .sub-skills {
@@ -125,28 +157,36 @@
         }
 
         .project-link {
-            color: #007BFF;
+            color: #4494ff; /* Green Text */
             text-decoration: none;
             margin-left: 5px;
             font-size: 0.8em;
         }
 
         .github-icon {
-            color: #007BFF;
+            color: #4494ff; /* Green Text */
             font-size: 1.5em;
         }
 
         .divider {
-            border-top: 2px solid #007BFF;
+            border-top: 2px solid #4494ff; /* Green Text */
             margin-top: 20px;
             margin-bottom: 20px;
         }
-
     </style>
 </head>
 <body>
-    <h1>Kamal Yeshodhar Shastry Gattu</h1>
-    <p>Lowell, MA | <i class="contact-icons fas fa-phone-alt"></i> +1 (571) 732-7250 | <i class="contact-icons far fa-envelope"></i> kysgattu0502@gmail.com |<br> <i class="contact-icons fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/kysgattu/" target="_blank">LinkedIn.com/in/kysgattu</a> | <i class="contact-icons fab fa-github"></i> <a href="https://github.com/kysgattu" target="_blank">GitHub.com/kysgattu</a></p>
+    <div id="profile-section">
+
+        <div id = "contact">
+            <h1>Kamal Yeshodhar Shastry Gattu</h1>
+            <p>Lowell, MA | <i class="contact-icons fas fa-phone-alt"></i> +1 (571) 732-7250 | <i class="contact-icons far fa-envelope"></i> kysgattu0502@gmail.com |<br> <i class="contact-icons fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/kysgattu/" target="_blank">LinkedIn.com/in/kysgattu</a> | <i class="contact-icons fab fa-github"></i> <a href="https://github.com/kysgattu" target="_blank">GitHub.com/kysgattu</a></p>
+        </div>
+        <img id="profile-picture" src="profilepic.jpeg" alt="Profile Picture">
+    </div>
+<!--    <img id="profile-picture" src="profilepic.jpeg" alt="Profile Picture">-->
+<!--    <h1>Kamal Yeshodhar Shastry Gattu</h1>-->
+<!--    <p>Lowell, MA | <i class="contact-icons fas fa-phone-alt"></i> +1 (571) 732-7250 | <i class="contact-icons far fa-envelope"></i> kysgattu0502@gmail.com |<br> <i class="contact-icons fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/kysgattu/" target="_blank">LinkedIn.com/in/kysgattu</a> | <i class="contact-icons fab fa-github"></i> <a href="https://github.com/kysgattu" target="_blank">GitHub.com/kysgattu</a></p>-->
     <div class="section-box">
         <h2 class="box-title">EDUCATION</h2>
         <ul>
@@ -184,19 +224,6 @@
             </li>
         </ul>
     </div>
-
-<!--    <div class="section-box">-->
-<!--        <h2 class="box-title">TECHNICAL SKILLS</h2>-->
-<!--        <ul>-->
-<!--            <li class="box-title"><strong>Programming Languages:</strong> <em>Python, Java</em></li>-->
-<!--            <li class="box-title"><strong>Machine Learning Libraries:</strong> <em>NumPy, Pandas, Scikit-learn, Keras-TensorFlow, PyTorch, OpenCV, Matplotlib, NLTK</em></li>-->
-<!--            <li class="box-title"><strong>Database:</strong> <em>SQL, MySQL, PostgreSQL, Amazon Redshift</em></li>-->
-<!--            <li class="box-title"><strong>ETL Tools:</strong> <em>Informatica PowerCenter</em></li>-->
-<!--            <li class="box-title"><strong>Web Designing:</strong> <em>HTML, CSS, JavaScript</em></li>-->
-<!--            <li class="box-title"><strong>Others:</strong> <em>Linux, REST API, Microsoft PowerApps, Microsoft Office, Git</em></li>-->
-<!--        </ul>-->
-<!--    </div>-->
-
 
     <div class="section-box">
         <h2 class="box-title">TECHNICAL SKILLS</h2>
@@ -260,7 +287,7 @@
     <div class="section-box">
         <h2 class="box-title">PROJECTS</h2>
         <ul>
-            <li><span class="box-title italicize">Pedestrian Detection System using YOLO</span><a class="project-link" href="YourProjectLink" target="_blank"><i class="github-icon fab fa-github"></i></a><br>
+            <li><span class="box-title italicize">Pedestrian Detection System using YOLO</span><a class="project-link" href="https://github.com/kysgattu/Pedestrian-Detection-System" target="_blank"><i class="github-icon fab fa-github"></i></a><br>
                 <span class="fade-text">Sept 2023 – Oct 2023</span>
                 <ul class="bullets">
                     <li>Developed a Pedestrian Detection System for UMass Lowell's Campus Planning Department utilizing advanced Machine Learning Techniques and the formidable YOLO Deep Learning Algorithm to count individuals on specific campus pathways accurately.</li>
@@ -268,7 +295,7 @@
                 </ul>
             </li>
             <div class="divider"></div>
-            <li><span class="box-title italicize">Chest X-Ray Classification to Detect COVID-19 Using Deep Neural Networks</span><a class="project-link" href="YourProjectLink" target="_blank"><i class="github-icon fab fa-github"></i></a><br>
+            <li><span class="box-title italicize">Chest X-Ray Classification to Detect COVID-19 Using Deep Neural Networks</span><a class="project-link" href="https://github.com/kysgattu/Chest-X-Ray-Classification-to-detect-COVID-19-using-Deep-Neural-Networks" target="_blank"><i class="github-icon fab fa-github"></i></a><br>
                 <span class="fade-text">Feb 2023 – May 2023</span>
                 <ul class="bullets">
                     <li>Developed an advanced deep learning model for precise classification of chest X-rays, focusing on detecting COVID-19 cases to create an efficient diagnostic tool with an accuracy of 92% based on 42000 lung X-ray images.</li>
@@ -276,7 +303,7 @@
                 </ul>
             </li>
             <div class="divider"></div>
-            <li><span class="box-title italicize">Climate Change Sentiment Analysis</span><a class="project-link" href="YourProjectLink" target="_blank"><i class="github-icon fab fa-github"></i></a><br>
+            <li><span class="box-title italicize">Climate Change Sentiment Analysis</span><a class="project-link" href="https://github.com/kysgattu/Climate-Change-Twitter-Sentiment-Analysis" target="_blank"><i class="github-icon fab fa-github"></i></a><br>
                 <span class="fade-text">Jan 2022 – Apr 2022</span>
                 <ul class="bullets">
                     <li>Conducted sentiment analysis on Twitter data with more than 43000 tweets to gauge public sentiment towards climate change leveraging natural language processing techniques to analyze and classify sentiment.</li>
@@ -284,33 +311,48 @@
                 </ul>
             </li>
             <div class="divider"></div>
-            <li><span class="box-title italicize">Citizens Income Prediction - Comparison of Machine Learning Models</span><a class="project-link" href="YourProjectLink" target="_blank"><i class="github-icon fab fa-github"></i></a><br>
+            <li><span class="box-title italicize">Citizens Income Prediction - Comparison of Machine Learning Models</span><a class="project-link" href="https://github.com/kysgattu/Citizens-Income-Prediction_Comparision-Of-ML-Algorithms" target="_blank"><i class="github-icon fab fa-github"></i></a><br>
                 <span class="fade-text">Feb 2022 – Apr 2022</span>
                 <ul class="bullets">
                     <li>Trained predictive models for income levels of citizens on UCI Adult Income Dataset with 48000 data samples, analyzing the effectiveness of standard machine learning algorithms.</li>
                 </ul>
             </li>
             <div class="divider"></div>
-            <li><span class="box-title italicize">Face Mask Detection</span><a class="project-link" href="YourProjectLink" target="_blank"><i class="github-icon fab fa-github"></i></a><br>
+            <li><span class="box-title italicize">Face Mask Detection</span><a class="project-link" href="https://github.com/kysgattu/Face-Mask-Detection" target="_blank"><i class="github-icon fab fa-github"></i></a><br>
                 <span class="fade-text">Oct 2020 – Nov 2020</span>
                 <ul class="bullets">
                     <li>Engineered a sophisticated system with 90% accuracy for the precise identification of mask-wearing individuals within images and videos, harnessing the power of Deep Neural Networks and image recognition techniques.</li>
                 </ul>
             </li>
             <div class="divider"></div>
-            <li><span class="box-title italicize">Recolored Images Detection Using Deep Discriminative Model</span><a class="project-link" href="YourProjectLink" target="_blank"><i class="github-icon fab fa-github"></i></a><br>
+            <li><span class="box-title italicize">Recolored Images Detection Using Deep Discriminative Model</span><a class="project-link" href="https://github.com/kysgattu/Recolored-Image-Detection" target="_blank"><i class="github-icon fab fa-github"></i></a><br>
                 <span class="fade-text">Jan 2020 – April 2020</span>
                 <ul class="bullets">
                     <li>As the primary developer, implemented the IEEE paper of the same name which involved curating and pre-processing large datasets, fine-tuning model hyperparameters, and optimizing the network architecture TensorFlow in Python.</li>
                 </ul>
             </li>
             <div class="divider"></div>
-            <li><span class="box-title italicize">Aadhaar-Based Online Voting System</span><a class="project-link" href="YourProjectLink" target="_blank"><i class="github-icon fab fa-github"></i></a><br>
+            <li><span class="box-title italicize">Aadhaar-Based Online Voting System</span><a class="project-link" href="https://github.com/kysgattu/Online-Voting-System" target="_blank"><i class="github-icon fab fa-github"></i></a><br>
                 <span class="fade-text">June 2019 – Nov 2019</span>
                 <ul class="bullets">
                     <li>Crafted a remote voting channel to boost voter engagement and cut election expenses by allowing voters to vote online. This system has proven effective in handling student body elections with over 2000 students casting votes with ease.</li>
                 </ul>
             </li>
+            <div class="divider"></div>
+            <li><span class="box-title italicize">Health Care-Diabetes</span><a class="project-link" href="https://github.com/kysgattu/Health-Care-Diabetes" target="_blank"><i class="github-icon fab fa-github"></i></a><br>
+                <span class="fade-text">May 2018 – June 2018</span>
+                <ul class="bullets">
+                    <li>Analyzed historical data of a group of patients and trained a system to detect the possibility of a patient having diabetes based on previous health conditions and find effects of each health condition on having diabetes.</li>
+                </ul>
+            <div class="divider"></div>
+            <li><span class="box-title italicize">User Kowledge Modelling</span><a class="project-link" href="https://github.com/kysgattu/User-Knowledge-Modelling" target="_blank"><i class="github-icon fab fa-github"></i></a><br>
+                <span class="fade-text">May 2018 – June 2018</span>
+                <ul class="bullets">
+                    <li>Developed a Machine Learning model for predicting the students’ knowledge status about the subject of Electrical DC Machines based on certain constraints.</li>
+                </ul>
+            </li>
+            </li>
+
         </ul>
     </div>
 
