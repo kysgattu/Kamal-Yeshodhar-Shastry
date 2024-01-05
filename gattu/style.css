@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamal Yeshodhar Shastry Gattu</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -60,8 +52,8 @@
             justify-content: space-around;
             margin-bottom: 5px;
             width: 100%;
-            background-color: rgba(41, 41, 71, 0.9); /* Match the profile-section background */
-            /*background-color: #333;*/
+            background-color: rgba(51, 51, 51, 0.3); /* Match the profile-section background */
+            background-color: #333;
             box-sizing: border-box;
             border-radius: 10px;
             padding: 8px;
@@ -70,7 +62,7 @@
 
         #menu-bar button {
             flex: 1;
-            background-color: #333;
+            background-color: rgba(51, 51, 51, 0.3); /* Match the profile-section background */
             color: #fff; /* White Text */
             border: none;
             border-radius: 5px;
@@ -83,7 +75,7 @@
         }
 
         #menu-bar button:hover {
-            background-color: #1d5196; /* Hover color matches the accent color in profile-section */
+            background-color: #4494ff; /* Hover color matches the accent color in profile-section */
             color: #fff; /* White Text on Hover */
         }
 
@@ -251,113 +243,3 @@
             margin-top: 20px;
             margin-bottom: 20px;
         }
-
-    </style>
-
-</head>
-
-
-
-<body>
-    <div id="profile-section">
-
-        <div id = "contact"><h1>Kamal Yeshodhar Shastry Gattu</h1>
-            <p class="contact-text">Lowell, MA |
-                <i class="contact-icons fas fa-phone-alt"></i> +1 (571) 732-7250 |
-                <i class="contact-icons far fa-envelope"></i> <a href="mailto:kysgattu0502@gmail.com"> kysgattu0502@gmail.com <br></a>
-                <i class="contact-icons fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/kysgattu/" target="_blank">LinkedIn.com/in/kysgattu</a> |
-                <i class="contact-icons fab fa-github"></i> <a href="https://github.com/kysgattu" target="_blank">GitHub.com/kysgattu</a>
-            </p>
-        </div>
-        <img id="profile-picture" src="Files/profilepic.jpeg" alt="Profile Picture">
-    </div>
-
-    <div id="menu-bar">
-        <button onclick="navigateToPage('index.html')">Profile</button>
-        <button onclick="navigateToPage('education.html')">Education</button>
-        <button onclick="navigateToPage('experience.html')">Experience</button>
-        <button onclick="navigateToPage('skills.html')">Skills</button>
-        <button onclick="navigateToPage('projects.html')">Projects</button>
-    </div>
-
-    <div class="section-box">
-        <h2 class="box-title">TECHNICAL SKILLS</h2>
-        <ul class="tree">
-            <li class="tree-item" onclick="toggleCollapse(this)">
-                <span>Programming Languages</span>
-                <ul class="sub-skills">
-                    <li>Python</li>
-                    <li>Java</li>
-                </ul>
-            </li>
-            <li class="tree-item" onclick="toggleCollapse(this)">
-                <span>Machine Learning Libraries</span>
-                <ul class="sub-skills">
-                    <li>NumPy</li>
-                    <li>Pandas</li>
-                    <li>Scikit-learn</li>
-                    <li>Keras-TensorFlow</li>
-                    <li>PyTorch</li>
-                    <li>OpenCV</li>
-                    <li>Matplotlib</li>
-                    <li>NLTK</li>
-                </ul>
-            </li>
-            <li class="tree-item" onclick="toggleCollapse(this)">
-                <span>Database</span>
-                <ul class="sub-skills">
-                    <li>SQL</li>
-                    <li>MySQL</li>
-                    <li>PostgreSQL</li>
-                    <li>Amazon Redshift</li>
-                </ul>
-            </li>
-            <li class="tree-item" onclick="toggleCollapse(this)">
-                <span>ETL Tools</span>
-                <ul class="sub-skills">
-                    <li>Informatica PowerCenter</li>
-                </ul>
-            </li>
-            <li class="tree-item" onclick="toggleCollapse(this)">
-                <span>Web Designing</span>
-                <ul class="sub-skills">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-            </li>
-            <li class="tree-item" onclick="toggleCollapse(this)">
-                <span>Others</span>
-                <ul class="sub-skills">
-                    <li>Linux</li>
-                    <li>REST API</li>
-                    <li>Microsoft PowerApps</li>
-                    <li>Microsoft Office</li>
-                    <li>Git</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
-    <script>
-        function toggleCollapse(element) {
-            const subSkills = element.querySelector('.sub-skills');
-            element.classList.toggle("collapsed");
-            subSkills.classList.toggle("active");
-        }
-    </script>
-    <script>
-        function navigateToPage(pageUrl) {
-            // Redirect to the specified page
-            window.location.href = pageUrl;
-        }
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
-
-    <footer>
-        &copy; 2024 Kamal YS Gattu | <a href="mailto:kysgattu0502@gmail.com">kysgattu0502@gmail.com</a> | <a href="https://linkedin.com/in/kysgattu" target="_blank">LinkedIn</a> | <a href="https://github.com/kysgattu" target="_blank">GitHub</a>
-    </footer>
-
-</body>
-</html>
