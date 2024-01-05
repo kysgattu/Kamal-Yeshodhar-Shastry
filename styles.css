@@ -3,7 +3,7 @@ body {
     line-height: 1.6;
     margin: 20px auto;
     padding: 10px;
-    max-width: 900px;
+    max-width: 842px;
     /*background-image: url("Files/background.jpeg");*/
     background-color: #0F0F10FF;
     background-size: cover; /* Ensure the background image covers the entire container */
@@ -51,6 +51,7 @@ body {
     display: flex;
     justify-content: space-around;
     margin-bottom: 5px;
+    max-width: 842px;
     width: 100%;
     background-color: rgba(41, 41, 71, 0.9); /* Match the profile-section background */
     /*background-color: #333;*/
