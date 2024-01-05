@@ -11,8 +11,9 @@
             line-height: 1.6;
             margin: 20px auto;
             padding: 10px;
-            max-width: 842px;
-            background-image: url("Files/background.jpeg");
+            max-width: 900px;
+            /*background-image: url("Files/background.jpeg");*/
+            background-color: #0F0F10FF;
             background-size: cover; /* Ensure the background image covers the entire container */
             background-repeat: no-repeat; /* Prevent the background image from repeating */
             color: #fff; /* Light Text */
@@ -21,30 +22,76 @@
             justify-content: center;
             flex-direction: row;
         }
+
         #profile-section {
+
             display: flex;
-/*             align-items: center; */
-            margin-bottom: 15px;
+            background-color: #0f0f10;
+            /*text-align: center;*/
+            border-radius: 10px;
+
+
+            margin-bottom: 10px;
         }
 
         #profile-picture {
-            width: 150px; /* Adjust the size as needed */
-            height: 150px;
+            width: 180px; /* Adjust the size as needed */
+            height: 180px;
             border-radius: 10px;
             /*margin: auto 20px 0px 20px; !* Centered and adds space below *!*/
-            /*margin-bottom: 0px;*/
+            margin-bottom: 5px;
             margin-left: auto;
             /*margin-right: 0px;*/
-            /*margin-top: 0px;*/
+            margin-top: 5px;
+
             display: block;
             border: 1px solid #4494ff; /* Green Border */
         }
 
+
         #contact{
             align-items: stretch ;
+            margin-left:5px;
+
         }
 
-        h1,
+        #menu-bar {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 5px;
+            width: 100%;
+            background-color: rgba(51, 51, 51, 0.3); /* Match the profile-section background */
+            background-color: #333;
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #menu-bar button {
+            flex: 1;
+            background-color: rgba(51, 51, 51, 0.3); /* Match the profile-section background */
+            color: #fff; /* White Text */
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            margin: 0 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            font-weight: bolder;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        #menu-bar button:hover {
+            background-color: #4494ff; /* Hover color matches the accent color in profile-section */
+            color: #fff; /* White Text on Hover */
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #4494ff; /* Green Text */
+        }
+
         h2 {
             color: #4494ff; /* Green Text */
         }
@@ -77,6 +124,9 @@
             font-size: 1.2em;
             margin-right: 5px;
         }
+        .contact-text {
+            font-size: 1.2em;
+        }
 
         .profile-box {
             background-color: rgba(51, 51, 51, 0.3); /* Dark Gray with 80% opacity */
@@ -88,6 +138,7 @@
 
         .section-box {
             background-color: rgba(51, 51, 51, 0.98); /* Dark Gray with 80% opacity */
+            /*background: linear-gradient(to left, #ff7e5f, #feb47b);*/
             border-radius: 10px;
             padding: 20px;
             margin-bottom: 5px;
@@ -199,42 +250,23 @@
             border-top: 2px solid #4494ff; /* Green Text */
             margin-top: 20px;
             margin-bottom: 20px;
-            max-width: 842px; /* Adjust the max-width to match your desired width */
-            margin-left: auto;
-            margin-right: auto;
         }
-
-        #menu-bar {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-
-        #menu-bar button {
-            background-color: rgba(51, 51, 51, 0.98);
-            color: #4494ff; /* Green Text */
-            border: none;
-            border-radius: 5px;
-            padding: 10px 15px;
-            margin: 0 5px;
-            cursor: pointer;
-            font-size: 1em;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        #menu-bar button:hover {
-            background-color: #4494ff; /* Green Text */
-            color: #fff; /* White Text */
-        }
-
 
     </style>
+
 </head>
+
+
 <body>
     <div id="profile-section">
 
         <div id = "contact"><h1>Kamal Yeshodhar Shastry Gattu</h1>
-            <p>Lowell, MA | <i class="contact-icons fas fa-phone-alt"></i> +1 (571) 732-7250 | <i class="contact-icons far fa-envelope"></i> kysgattu0502@gmail.com |<br> <i class="contact-icons fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/kysgattu/" target="_blank">LinkedIn.com/in/kysgattu</a> | <i class="contact-icons fab fa-github"></i> <a href="https://github.com/kysgattu" target="_blank">GitHub.com/kysgattu</a></p>
+            <p class="contact-text">Lowell, MA |
+                <i class="contact-icons fas fa-phone-alt"></i> +1 (571) 732-7250 |
+                <i class="contact-icons far fa-envelope"></i> <a href="mailto:kysgattu0502@gmail.com"> kysgattu0502@gmail.com <br></a>
+                <i class="contact-icons fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/kysgattu/" target="_blank">LinkedIn.com/in/kysgattu</a> |
+                <i class="contact-icons fab fa-github"></i> <a href="https://github.com/kysgattu" target="_blank">GitHub.com/kysgattu</a>
+            </p>
         </div>
         <img id="profile-picture" src="Files/profilepic.jpeg" alt="Profile Picture">
     </div>
