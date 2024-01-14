@@ -1,7 +1,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    margin: 20px auto;
+    margin: 0px auto;
     padding: 10px;
     max-width: 842px;
     /*background-image: url("Files/background.jpeg");*/
@@ -23,7 +23,7 @@ body {
     border-radius: 10px;
 
 
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 #profile-picture {
@@ -31,10 +31,10 @@ body {
     height: 180px;
     border-radius: 10px;
     /*margin: auto 20px 0px 20px; !* Centered and adds space below *!*/
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     margin-left: auto;
     /*margin-right: 0px;*/
-    margin-top: 5px;
+    margin-top: 0px;
 
     display: block;
     border: 1px solid #4494ff; /* Green Border */
@@ -42,7 +42,7 @@ body {
 
 
 #contact{
-    align-items: stretch ;
+    align-items: flex-start ;
     margin-left:5px;
 
 }
@@ -131,7 +131,7 @@ a:hover {
     background-color: rgba(51, 51, 51, 0.3); /* Dark Gray with 80% opacity */
     border-radius: 10px;
     padding: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
