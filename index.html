@@ -1,102 +1,519 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamal YS Gattu - Profile</title>
-    <link rel="icon" type="image/x-icon" href="Files/icon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
-    <script src="scripts.js" defer></script>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kamal YS Gattu – Portfolio</title>
 
+    <!-- Favicon (optional) -->
+    <link rel="icon" type="image/svg+xml"
+          href="https://raw.githubusercontent.com/kysgattu/kysgattu-assets/main/favicon.svg"/>
+
+    <!-- Smooth-scroll behaviour for anchor links  -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased">
+<!-- ===== HEADER / HERO ===== -->
+<header class="relative isolate overflow-hidden bg-gradient-to-br from-indigo-900/40 via-purple-900/40 to-rose-900/40 pt-16 pb-24 shadow-xl shadow-purple-950/40">
+    <div class="container mx-auto max-w-5xl px-4 lg:flex lg:items-center lg:gap-12">
+        <!-- Avatar -->
+        <img src="Files/profilepic.jpeg" alt="Kamal Gattu avatar"
+             class="mx-auto h-40 w-40 flex-shrink-0 rounded-2xl border-4 border-indigo-500/60 object-cover shadow-lg"/>
 
+        <!-- Intro -->
+        <div class="mt-8 text-center lg:mt-0 lg:text-left">
+            <h1 class="text-4xl font-extrabold tracking-tight text-indigo-400 drop-shadow-md sm:text-5xl">
+                Kamal Yeshodhar Shastry Gattu
+            </h1>
+            <p class="mt-4 text-lg leading-relaxed text-zinc-300">
+                <span class="font-semibold text-indigo-300">LOWELL, MA</span> • Machine-Learning, IOT &amp; Software
+                Systems Engineer.
+            </p>
+            <!-- Contact / CTA -->
+            <div class="mt-6 flex flex-wrap justify-center gap-4 lg:justify-start">
+                <a href="mailto:kysgattu0502@gmail.com"
+                   class="rounded-2xl border border-indigo-500/40 bg-indigo-500/10 px-5 py-2 text-sm font-semibold text-indigo-300 shadow transition hover:bg-indigo-500/20">
+                    Email
+                </a>
+                <a href="https://www.linkedin.com/in/kysgattu" target="_blank"
+                   class="rounded-2xl border border-blue-500/40 bg-blue-500/10 px-5 py-2 text-sm font-semibold text-blue-400 shadow transition hover:bg-blue-500/20">
+                    LinkedIn
+                </a>
+                <a href="https://github.com/kysgattu" target="_blank"
+                   class="rounded-2xl border border-emerald-500/40 bg-emerald-500/10 px-5 py-2 text-sm font-semibold text-emerald-400 shadow transition hover:bg-emerald-500/20">
+                    GitHub
+                </a>
+                <a href="Files/CV_KYSGattu_2025May.pdf"
+                   class="rounded-2xl border border-rose-400/40 bg-rose-400/10 px-5 py-2 text-sm font-semibold text-rose-300 shadow transition hover:bg-rose-400/20"
+                   download>
+                    Résumé ↧
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Decorative background blur  -->
+    <div class="pointer-events-none absolute inset-0 -z-10">
+        <div class="absolute inset-0 bg-grid-small-[rgba(255,255,255,0.03)]"></div>
+    </div>
 
+    <!-- Scroll down indicator -->
+    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 animate-bounce text-zinc-400">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down">
+            <path d="m6 9 6 6 6-6"/>
+        </svg>
+    </div>
+</header>
 
-<body>
-    <div id="profile-section">
+<!-- Sticky nav -->
+<nav class="sticky top-0 z-50 backdrop-blur-sm backdrop-saturate-150 bg-zinc-950/80 border-b border-zinc-900/60 shadow-lg">
+    <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-2 text-sm font-medium uppercase tracking-wide text-zinc-300">
+        <span class="font-bold text-indigo-400">Portfolio</span>
+        <ul class="flex gap-4">
+            <li><a href="#about" class="hover:text-indigo-300">About</a></li>
+            <li><a href="#education" class="hover:text-indigo-300">Education</a></li>
+            <li><a href="#experience" class="hover:text-indigo-300">Experience</a></li>
+            <li><a href="#skills" class="hover:text-indigo-300">Skills</a></li>
+            <li><a href="#projects" class="hover:text-indigo-300">Projects</a></li>
+        </ul>
+    </div>
+</nav>
 
-        <div id = "contact"><h1>Kamal Yeshodhar Shastry Gattu</h1>
-            <p class="contact-text">
-                <i class="contact-icons fas fa-map-marker-alt"></i>Lowell, MA |
-                <i class="contact-icons fas fa-phone-alt"></i> +1 (571) 732-7250 |
-                <i class="contact-icons far fa-envelope"></i> <a href="mailto:kysgattu0502@gmail.com"> kysgattu0502@gmail.com <br></a>
-                <i class="contact-icons fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/kysgattu/" target="_blank">LinkedIn.com/in/kysgattu</a> |
-                <i class="contact-icons fab fa-github"></i> <a href="https://github.com/kysgattu" target="_blank">GitHub.com/kysgattu</a>
-                <p><b>Download my CV:</b><i> <a href="Files/Kamal_Yeshodhar_Shastry_Gattu_CV.pdf" download="Kamal_Yeshodhar_Shastry_Gattu_CV.pdf">Kamal_Yeshodhar_Shastry_Gattu_CV.pdf</a></i></p>
+<main class="mx-auto max-w-5xl space-y-5 px-4 py-16">
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="scroll-mt-20">
+        <h2 class="text-3xl font-semibold text-indigo-400">About</h2>
+        <div class="mt-6 space-y-6 text-base leading-relaxed text-zinc-300 max-w-prose">
+            <p>
+                Hello! I’m Kamal — a Systems Engineer who enjoys taking ideas from whiteboard sketches to
+                production‑ready
+                solutions. My toolkit covers Python, Java, JavaScript, HTML/CSS, and SQL, and I’m most at home in a
+                Linux
+                terminal with Git close by.
+            </p>
+
+            <p class="font-medium text-indigo-300">Areas of focus</p>
+            <ul class="list-disc pl-5 space-y-1">
+                <li><strong>Software Development:</strong> design, build, and maintain full‑stack applications.</li>
+                <li><strong>Machine Learning:</strong> image &amp; text processing, deep &amp; transfer learning.</li>
+
+                <li><strong>Database Management:</strong> schema design, performance tuning on MySQL, PostgreSQL,
+                    Redshift, Oracle.
+                </li>
+                <li><strong>IoT with Raspberry Pi:</strong> prototype and deploy sensor‑driven lab solutions
+                    (novice‑expert level).
+                </li>
+                <li><strong>REST‑centric Tooling:</strong> architect robust software that consumes, enriches, and
+                    surfaces data via APIs.
+                </li>
+                <li><strong>Data Engineering:</strong> ETL with Informatica PowerCenter/IICS, SQL optimisation.</li>
+            </ul>
+
+            <p>
+                I like working where software, data, and hardware intersect — whether that’s automating lab workflows,
+                wiring up IoT sensors, or shipping ML models behind clean REST endpoints. Day‑to‑day, you’ll find me
+                iterating in VS Code or PyCharm, tracking work in JIRA, and keeping documentation tight in Markdown or
+                Confluence.
             </p>
         </div>
-        <img id="profile-picture" src="Files/profilepic.jpeg" alt="Profile Picture">
-    </div>
-    <div id="menu-bar">
-        <button onclick="navigateToPage('index.html')">Profile</button>
-        <button onclick="navigateToPage('education.html')">Education</button>
-        <button onclick="navigateToPage('experience.html')">Experience</button>
-        <button onclick="navigateToPage('skills.html')">Skills</button>
-        <button onclick="navigateToPage('projects.html')">Projects</button>
-    </div>
-
-    <div class="section-box">
-    <section>
-        <p class="p-head">Tech Alchemist at Heart:</p>
-        <p>
-            Hey there! I'm Kamal, a tech enthusiast on a perpetual quest to turn ideas into reality through the alchemy of coding.<br>
-            My skill set reads like a tech buffet—I’m fluent in Python, Java, HTML/CSS, JavaScript, SQL, and I navigate the coding landscape with ease.<br>
-        </p>
     </section>
 
-    <section>
-        <p class="p-head">Areas of Expertise</p>
-        <b><p>
-            Software Development<br>
-            Machine Learning<br>
-            Data Engineering<br>
-            Database Management<br>
-        </p></b>
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="scroll-mt-20">
+        <h2 class="text-3xl font-semibold text-indigo-400">Education</h2>
+        <div class="mt-6 grid gap-6 sm:grid-cols-2">
+            <article class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40">
+                <h3 class="text-lg font-bold text-zinc-200">M.S. Computer Science</h3>
+                <p class="mt-1 text-sm text-zinc-400">University of Massachusetts Lowell • GPA 3.736 / 4 • Dec
+                    2023</p>
+            </article>
+            <article class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40">
+                <h3 class="text-lg font-bold text-zinc-200">B.Tech Computer Science &amp; Engineering</h3>
+                <p class="mt-1 text-sm text-zinc-400">JNTU Hyderabad • GPA 6.73 / 10 • Sep 2020</p>
+            </article>
+        </div>
     </section>
 
-    <section>
-        <p class="p-head">Machine Learning Maverick:</p>
-        <p>
-            If there's a heartbeat to my tech journey, it's the rhythmic pulse of machine learning.<br>
-            From diving into the intricacies of image processing, natural language processing, deep learning, to the finesse of transfer learning, I thrive on the challenge of unraveling complex problems using the power of algorithms.<br>
-        </p>
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="scroll-mt-20">
+        <h2 class="text-3xl font-semibold text-indigo-400">Experience</h2>
+        <div class="mt-6 space-y-10">
+            <!-- Hooke Laboratories -->
+            <div class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40">
+                <header class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                    <h3 class="text-lg font-bold text-zinc-200">Systems Engineer – Hooke Laboratories, LLC</h3>
+                    <span class="text-sm text-zinc-400">Mar 2024 – Present</span>
+                </header>
+                <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-zinc-300">
+                    <li>Led a team to digitise office operations with bespoke software, streamlining workflows and
+                        boosting efficiency. <!-- summary line --> </li>
+                    <li>Designed &amp; deployed machine‑learning models for tissue analysis, driving research
+                        precision and scalability.
+                    </li>
+                    <li>Built and maintained large‑language‑model pipelines that surface instant answers for
+                        Operations.
+                    </li>
+                    <li>Created instrument‑control software that optimises analytical workflows for research
+                        teams.
+                    </li>
+                    <li>Designed Raspberry‑Pi‑based IoT devices to monitor and secure lab equipment in real time.
+                    </li>
+                    <li>Automated project management with Google Apps Script, enhancing collaboration and data
+                        transparency.
+                    </li>
+                    <li>Served as company‑wide AI/ML adviser, evangelising best practices and guiding adoption.</li>
+                    <li>Strengthened IT operations &amp; security by improving backup routines and incident
+                        response.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- UMass Lowell -->
+            <div class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40">
+                <header class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                    <h3 class="text-lg font-bold text-zinc-200">Facilities Information Systems Assistant –
+                        University of Massachusetts Lowell</h3>
+                    <span class="text-sm text-zinc-400">Jan 2023 – Dec 2023</span>
+                </header>
+                <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-zinc-300">
+                    <li>Engineered a Python codebase around e‑Builder REST API to extract and validate cost data,
+                        automating multi‑format reports.
+                    </li>
+                    <li>Refactored data import logic, cutting retrieval time by 70% and eliminating manual
+                        bottlenecks.
+                    </li>
+                    <li>Integrated heterogeneous data into MS SQL Server for reconciliation dashboards despite
+                        record‑limit constraints.
+                    </li>
+                    <li>Built HTML front‑ends and Tkinter dashboards to simplify work‑order management for
+                        non‑technical users.
+                    </li>
+                    <li>Developed ML‑powered pedestrian‑counting system with YOLO, reducing manual campus‑planning
+                        effort by 90%.
+                    </li>
+                    <li>Devised an intuitive interface for video uploads and region selection to enable self‑service
+                        analytics.
+                    </li>
+                    <li>Conducted unit &amp; UAT testing, hardening the system’s stability and enhancing UX.</li>
+                </ul>
+            </div>
+
+            <!-- Cognizant -->
+            <div class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40">
+                <header class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                    <h3 class="text-lg font-bold text-zinc-200">Programmer Analyst Trainee – Cognizant (Data
+                        Integration / ETL)</h3>
+                    <span class="text-sm text-zinc-400">Dec 2020 – Nov 2021</span>
+                </header>
+                <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-zinc-300">
+                    <li>Optimised data‑warehouse ETL for an automotive CRM (>5 M customers), improving query
+                        performance &amp; processing speed.
+                    </li>
+                    <li>Designed complex mappings and workflows in Informatica PowerCenter, streamlining nightly
+                        loads.
+                    </li>
+                    <li>Administered PostgreSQL &amp; Amazon Redshift back‑ends, reducing downtime by 10% through
+                        proactive maintenance.
+                    </li>
+                    <li>Authored comprehensive documentation to accelerate onboarding and facilitate
+                        troubleshooting.
+                    </li>
+                    <li>Collaborated with cross‑functional teams to ensure data accuracy and integrity across
+                        pipelines.
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <p class="p-head">Data Whisperer and Engineer Extraordinaire:</p>
-        <p>
-            Data, to me, is not just information—it's a story waiting to be told.<br>
-            I wield ETL tools like Informatica PowerCenter and Informatica Intelligent Cloud Services as my instruments, orchestrating seamless data flows and crafting robust solutions.<br>
-            In the realm of data, I'm the engineer who brings order to the chaos.<br>
-            Data engineering isn't just a task; it's a canvas waiting for strokes of innovation. Whether it's optimizing data import processes, revamping APIs, or sculpting databases, I'm the artist who crafts efficiency and elegance.<br>
-        </p>
+    <!-- ========= SKILLS ========= -->
+    <section id="skills" class="scroll-mt-20">
+        <h2 class="text-3xl font-semibold text-indigo-400">Skills</h2>
+        <div class="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <!-- Card helper component -->
+            <!-- 1 -->
+            <div class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40"><h3
+                    class="mb-3 text-lg font-semibold text-zinc-200">Programming Languages</h3>
+                <ul class="flex flex-wrap gap-2 text-sm text-zinc-300">
+                    <li class="badge">Python</li>
+                    <li class="badge">Java</li>
+                    <li class="badge">C/C++</li>
+                    <li class="badge">C#</li>
+                    <li class="badge">JavaScript</li>
+                    <li class="badge">HTML/CSS</li>
+                    <li class="badge">Google Apps Script</li>
+                </ul>
+            </div>
+            <!-- 2 -->
+            <div class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40"><h3
+                    class="mb-3 text-lg font-semibold text-zinc-200">Databases</h3>
+                <ul class="flex flex-wrap gap-2 text-sm text-zinc-300">
+                    <li class="badge">Oracle SQL</li>
+                    <li class="badge">MySQL</li>
+                    <li class="badge">MariaDB</li>
+                    <li class="badge">MS SQL Server</li>
+                    <li class="badge">PostgreSQL</li>
+                    <li class="badge">Amazon Redshift</li>
+                    <li class="badge">PL/SQL</li>
+                    <li class="badge">T‑SQL</li>
+                </ul>
+            </div>
+            <!-- 3 -->
+            <div class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40"><h3
+                    class="mb-3 text-lg font-semibold text-zinc-200">Python Libraries</h3>
+                <ul class="flex flex-wrap gap-2 text-sm text-zinc-300">
+                    <li class="badge">NumPy</li>
+                    <li class="badge">Pandas</li>
+                    <li class="badge">scikit‑learn</li>
+                    <li class="badge">TensorFlow</li>
+                    <li class="badge">Keras</li>
+                    <li class="badge">PyTorch</li>
+                    <li class="badge">OpenCV</li>
+                    <li class="badge">NLTK</li>
+                    <li class="badge">Matplotlib</li>
+                </ul>
+            </div>
+            <!-- 4 -->
+            <div class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40"><h3
+                    class="mb-3 text-lg font-semibold text-zinc-200">Deployment Tools</h3>
+                <ul class="flex flex-wrap gap-2 text-sm text-zinc-300">
+                    <li class="badge">Flask</li>
+                    <li class="badge">Docker</li>
+                    <li class="badge">Streamlit</li>
+                </ul>
+            </div>
+            <!-- 5 -->
+            <div class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40"><h3
+                    class="mb-3 text-lg font-semibold text-zinc-200">ML &amp; AI Concepts</h3>
+                <ul class="flex flex-wrap gap-2 text-sm text-zinc-300">
+                    <li class="badge">Computer Vision</li>
+                    <li class="badge">NLP</li>
+                    <li class="badge">Deep Learning</li>
+                    <li class="badge">Transfer Learning</li>
+                    <li class="badge">Generative AI</li>
+                    <li class="badge">Prompt Engineering</li>
+                </ul>
+            </div>
+            <!-- 6 -->
+            <div class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40"><h3
+                    class="mb-3 text-lg font-semibold text-zinc-200">ML Tools</h3>
+                <ul class="flex flex-wrap gap-2 text-sm text-zinc-300">
+                    <li class="badge">Hugging Face</li>
+                    <li class="badge">Haystack</li>
+                    <li class="badge">Ultralytics</li>
+                </ul>
+            </div>
+            <!-- 7 -->
+            <div class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40"><h3
+                    class="mb-3 text-lg font-semibold text-zinc-200">ETL Tools</h3>
+                <ul class="flex flex-wrap gap-2 text-sm text-zinc-300">
+                    <li class="badge">Informatica PowerCenter</li>
+                    <li class="badge">Informatica IICS</li>
+                </ul>
+            </div>
+            <!-- 8 -->
+            <div class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40"><h3
+                    class="mb-3 text-lg font-semibold text-zinc-200">Dev &amp; Productivity</h3>
+                <ul class="flex flex-wrap gap-2 text-sm text-zinc-300">
+                    <li class="badge">Linux</li>
+                    <li class="badge">REST APIs</li>
+                    <li class="badge">Git</li>
+                    <li class="badge">JIRA</li>
+                    <li class="badge">PyCharm</li>
+                    <li class="badge">VS Code</li>
+                    <li class="badge">Jupyter</li>
+                    <li class="badge">Eclipse</li>
+                    <li class="badge">MS Office</li>
+                    <li class="badge">Google Workspace</li>
+                </ul>
+            </div>
+        </div>
     </section>
+    <!-- ========= PROJECTS ========= -->
+    <section id="projects" class="scroll-mt-20">
+        <h2 class="text-3xl font-semibold text-indigo-400">Projects</h2>
+        <div class="mt-6 grid gap-8 md:grid-cols-2">
+            <!-- 1: Pedestrian Detection -->
+            <article
+                    class="group relative overflow-hidden rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40 transition-transform hover:-translate-y-1 hover:shadow-lg">
+                <h3 class="text-lg font-bold text-zinc-200">Pedestrian Detection System using YOLO</h3>
+                <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-300">
+                    <li>Spearheaded the development of a cutting-edge Pedestrian Detection System for the University of
+                        Massachusetts Lowell's Campus Planning Department.
+                    </li>
+                    <li>Created an intuitive UI to upload videos and draw detection regions; runs real‑time
+                        detect‑track‑count.
+                    </li>
+                    <li>Boosted planning efficiency by automating tallies that previously took hours.</li>
+                </ul>
+                <a href="https://github.com/kysgattu/Pedestrian-Detection-System" target="_blank"
+                   class="absolute inset-0" aria-label="GitHub – Pedestrian Detection"></a>
+            </article>
 
-    <section>
-        <p class="p-head">Developer's Arsenal::</p>
-        <p>
-            In the world of development, I'm armed to the teeth. Linux is my command center, Python is my weapon, Git is my trusty sidekick, and I navigate the vast landscape of REST API with finesse.<br>
-            I wield ETL tools like Informatica PowerCenter and Informatica Intelligent Cloud Services as my instruments, orchestrating seamless data flows and crafting robust solutions.<br>
-            In the realm of data, I'm the engineer who brings order to the chaos.<br>
-            Microsoft Office, JIRA, PyCharm, VS Code, Eclipse—you name it, I’ve danced with it.<br>
-        </p>
+            <!-- 2: Chest X‑Ray -->
+            <article
+                    class="group relative overflow-hidden rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40 transition-transform hover:-translate-y-1 hover:shadow-lg">
+                <h3 class="text-lg font-bold text-zinc-200">Chest X‑Ray COVID‑19 Classifier</h3>
+                <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-300">
+                    <li>
+                        Built deep‑learning pipeline (ResNet, VGG, LeNet) to train models capable of classifying chest
+                        X-ray images into four respiratory illnesses on 42k lung X-ray images.
+                    </li>
+                    <li>Implemented an advanced visualization technique GRADCAM to identify and highlight areas affected
+                        by the virus within the lungs, aiding medical professionals in targeted treatment approaches.
+                    </li>
+                </ul>
+                <a href="https://github.com/kysgattu/Chest-X-Ray-Classification-to-detect-COVID-19-using-Deep-Neural-Networks"
+                   target="_blank" class="absolute inset-0" aria-label="GitHub – Chest X‑Ray"></a>
+            </article>
+
+            <!-- 3: News Article Summarization -->
+            <article
+                    class="group relative overflow-hidden rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40 transition-transform hover:-translate-y-1 hover:shadow-lg">
+                <h3 class="text-lg font-bold text-zinc-200">News Article Summarization: Evaluation of Cross-domain
+                    Adaptability of Text Summarizer</h3>
+                <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-300">
+                    <li>Engineered advanced text summarizers, seamlessly integrating Extractive (TextRank) and
+                        Abstractive (BART) techniques.
+                    </li>
+                    <li>Enhanced BART Model performance significantly, achieving a 20% improvement over previous
+                        implementations.
+                    </li>
+                    <li>Streamlined a thorough evaluation of cross-domain adaptability, consistently outperforming
+                        benchmark ROUGE scores in contrast to the model's original implementation and a fine-tuned BBC
+                        News model.
+                    </li>
+                </ul>
+                <a href="https://github.com/kysgattu/Evaluating-Cross-Domain-Adaptability-Of-Text-Summarizer-News-Article-Summarization"
+                   target="_blank"
+                   class="absolute inset-0" aria-label="GitHub – Climate Sentiment"></a>
+            </article>
+
+            <!-- 4: Climate Change Sentiment -->
+            <article
+                    class="group relative overflow-hidden rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40 transition-transform hover:-translate-y-1 hover:shadow-lg">
+                <h3 class="text-lg font-bold text-zinc-200">Climate Change Sentiment Analysis</h3>
+                <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-300">
+                    <li>Analysed 43k tweets on climate change; pipeline with NLTK preprocessing and Bi‑LSTM model.</li>
+                    <li>Employed Deep Learning Model with a Recurrent Neural Network approach using features including
+                        text in tweets and the frequency of specific keywords.
+                    </li>
+                    <li>Achieved 96% accuracy; validated robustness on fresh Twitter scrape.</li>
+                </ul>
+                <a href="https://github.com/kysgattu/Climate-Change-Twitter-Sentiment-Analysis" target="_blank"
+                   class="absolute inset-0" aria-label="GitHub – Climate Sentiment"></a>
+            </article>
+
+            <!-- 5: Face Mask Detection -->
+            <article
+                    class="group relative overflow-hidden rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40 transition-transform hover:-translate-y-1 hover:shadow-lg">
+                <h3 class="text-lg font-bold text-zinc-200">Face Mask Detection</h3>
+                <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-300">
+                    <li>CNN (Keras) model classifies Mask/No‑Mask with 90% accuracy on webcam streams.</li>
+                    <li>Real‑time alerts overlay &amp; beep for non‑compliance using OpenCV.</li>
+                </ul>
+                <a href="https://github.com/kysgattu/Face-Mask-Detection" target="_blank" class="absolute inset-0"
+                   aria-label="GitHub – Face Mask"></a>
+            </article>
+
+            <!-- 6: Recolored Image Forgery Detection -->
+            <article
+                    class="group relative overflow-hidden rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40 transition-transform hover:-translate-y-1 hover:shadow-lg">
+                <h3 class="text-lg font-bold text-zinc-200">Recolored Image Forgery Detection</h3>
+                <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-300">
+                    <li>Implemented IEEE‑TIFS '19 deep discriminative model in TensorFlow to detect colour‑transfer
+                        forgeries.
+                    </li>
+                    <li>Tested on forged &amp; internet images—accuracy improved 10% over baseline.</li>
+                </ul>
+                <a href="https://github.com/kysgattu/Recolored-Image-Detection" target="_blank" class="absolute inset-0"
+                   aria-label="GitHub – Recolored Images"></a>
+            </article>
+
+            <!-- 7: Citizens Income Prediction -->
+            <article
+                    class="group relative overflow-hidden rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40 transition-transform hover:-translate-y-1 hover:shadow-lg">
+                <h3 class="text-lg font-bold text-zinc-200">Citizens Income Prediction</h3>
+                <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-300">
+                    <li>Benchmarked 6 ML algorithms on UCI Adult dataset (48k rows); Random Forest hit 92% accuracy.
+                    </li>
+                    <li>Delivered comparative metrics (precision +25%, recall +20% over baseline).</li>
+                </ul>
+                <a href="https://github.com/kysgattu/Citizens-Income-Prediction_Comparision-Of-ML-Algorithms"
+                   target="_blank" class="absolute inset-0" aria-label="GitHub – Income Prediction"></a>
+            </article>
+
+            <!-- 8: Diabetes Risk Prediction -->
+            <article
+                    class="group relative overflow-hidden rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40 transition-transform hover:-translate-y-1 hover:shadow-lg">
+                <h3 class="text-lg font-bold text-zinc-200">Diabetes Risk Prediction</h3>
+                <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-300">
+                    <li>Trained XGBoost &amp; Logistic models on Pima dataset; Streamlit app with SHAP explainability.
+                    </li>
+                    <li>Helps clinicians interpret top risk factors for preventive care.</li>
+                </ul>
+                <a href="https://github.com/kysgattu/Diabetes-Risk-Prediction" target="_blank" class="absolute inset-0"
+                   aria-label="GitHub – Diabetes"></a>
+            </article>
+
+            <!-- 9: Student Knowledge Modelling -->
+            <article
+                    class="group relative overflow-hidden rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40 transition-transform hover:-translate-y-1 hover:shadow-lg">
+                <h3 class="text-lg font-bold text-zinc-200">Student Knowledge Modelling</h3>
+                <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-300">
+                    <li>Predicts students’ mastery of DC Machines concepts; instance‑based classifier boosts F1 by
+                        7%.
+                    </li>
+                    <li>GUI allows educators to upload CSVs and view predictions instantly.</li>
+                </ul>
+                <a href="https://github.com/kysgattu/User-Knowledge-Modelling" target="_blank" class="absolute inset-0"
+                   aria-label="GitHub – Knowledge Modelling"></a>
+            </article>
+            <!-- 10: Online Voting System -->
+            <article
+                    class="group relative overflow-hidden rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40 transition-transform hover:-translate-y-1 hover:shadow-lg">
+                <h3 class="text-lg font-bold text-zinc-200">Aadhaar‑Based Online Voting System</h3>
+                <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-300">
+                    <li>Java Servlets/JSP + MySQL platform enabling secure remote voting; 20% turnout increase in
+                        pilot.
+                    </li>
+                    <li>Cut election costs 15% while preserving confidentiality &amp; auditability.</li>
+                </ul>
+                <a href="https://github.com/kysgattu/Aadhaar-Based-Online-Voting-System" target="_blank"
+                   class="absolute inset-0" aria-label="GitHub – Voting"></a>
+            </article>
+
+
+        </div>
     </section>
-
-    <section>
-        <p class="p-head">What's Next</p>
-        <p>
-            Eager to contribute my skills and passion to the dynamic world of machine learning and data engineering.<br>
-            I’m not just seeking projects; I’m on a quest to create technological symphonies that resonate with innovation and efficiency.<br>
-            Ready to embark on the next chapter of this coding odyssey with a zeal for transforming data into insights and machines into marvels.<br>
-        </p>
-    </section>
-    </div>
-    <footer>
-        &copy; 2024 Kamal YS Gattu | <a href="mailto:kysgattu0502@gmail.com">kysgattu0502@gmail.com</a> | <a href="https://linkedin.com/in/kysgattu" target="_blank">LinkedIn</a> | <a href="https://github.com/kysgattu" target="_blank">GitHub</a>
-    </footer>
-
-
+</main>
+<footer class="border-t border-zinc-900/60 bg-zinc-950/90 py-10 text-center text-sm text-zinc-500">
+    © <span id="year"></span> Kamal YS Gattu •
+    <a href="mailto:kysgattu0502@gmail.com" style="color:#818CF8;">kysgattu0502@gmail.com</a> •
+    <a href="https://linkedin.com/in/kysgattu" target="_blank" style="color:#818CF8;">LinkedIn</a> •
+    <a href="https://github.com/kysgattu" target="_blank" style="color:#818CF8;">GitHub</a>
+</footer>
+<!-- Year auto-update & small helper classes  -->
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    // simple utility to render badge pills
+    document.querySelectorAll("ul.flex.flex-wrap.gap-2 > li").forEach((el) => {
+        el.classList.add(
+            "rounded-xl",
+            "bg-zinc-700/70",
+            "px-3",
+            "py-1.5",
+            "shadow",
+            "shadow-black/30"
+        );
+    });
+</script>
+<!-- Tailwind CDN (works on GitHub Pages without a build step) -->
+<script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
