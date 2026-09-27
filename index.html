@@ -1,516 +1,743 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-default-theme="dark">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Kamal YS Gattu – Portfolio</title>
+    <title>Kamal YS Gattu - Portfolio</title>
+    <meta name="description"
+          content="Kamal Yeshodhar Shastry Gattu — Systems Engineer in Greater Boston building software, machine learning, computer vision and IoT tools for research labs."/>
+    <meta property="og:title" content="Kamal YS Gattu - Portfolio"/>
+    <meta property="og:description"
+          content="Systems Engineer building software, ML, computer vision and IoT tools — from whiteboard sketch to production."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="Files/profilepic-640.jpg"/>
+    <meta name="theme-color" content="#07070d"/>
+    <link rel="icon" type="image/png" href="Files/favicon.png"/>
 
-    <link rel="icon" type="image/x-icon" href="Files/profilepic.jpeg">
-    <!-- Smooth-scroll behaviour for anchor links  -->
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+    <!-- Apply saved theme before first paint (no flash) -->
+    <script>
+        (function () {
+            var d = document.documentElement;
+            d.classList.add("js");
+            try {
+                var t = localStorage.getItem("theme");
+                if (t) d.dataset.theme = t;
+            } catch (e) {}
+        })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"/>
+    <link rel="stylesheet" href="assets/glow.css"/>
 </head>
-<body class="bg-zinc-950 text-zinc-100 font-sans antialiased">
-<!-- ===== HEADER / HERO ===== -->
-<header class="relative isolate overflow-hidden bg-gradient-to-br from-indigo-900/40 via-purple-900/40 to-rose-900/40 pt-16 pb-24 shadow-xl shadow-purple-950/40">
-    <div class="container mx-auto max-w-5xl px-4 lg:flex lg:items-center lg:gap-12">
-        <!-- Avatar -->
-        <img src="Files/profilepic.jpeg" alt="Kamal Gattu avatar"
-             class="mx-auto h-40 w-40 flex-shrink-0 rounded-2xl border-4 border-indigo-500/60 object-cover shadow-lg"/>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-        <!-- Intro -->
-        <div class="mt-8 text-center lg:mt-0 lg:text-left">
-            <h1 class="text-4xl font-extrabold tracking-tight text-indigo-400 drop-shadow-md sm:text-5xl">
-                Kamal Yeshodhar Shastry Gattu
-            </h1>
-            <p class="mt-4 text-lg leading-relaxed text-zinc-300">
-                <span class="font-semibold text-indigo-300">LOWELL, MA</span> • Machine-Learning, IOT &amp; Software
-                Systems Engineer.
-            </p>
-            <!-- Contact / CTA -->
-            <div class="mt-6 flex flex-wrap justify-center gap-4 lg:justify-start">
-                <a href="mailto:kysgattu0502@gmail.com"
-                   class="rounded-2xl border border-indigo-500/40 bg-indigo-500/10 px-5 py-2 text-sm font-semibold text-indigo-300 shadow transition hover:bg-indigo-500/20">
-                    Email
-                </a>
-                <a href="https://www.linkedin.com/in/kysgattu" target="_blank"
-                   class="rounded-2xl border border-blue-500/40 bg-blue-500/10 px-5 py-2 text-sm font-semibold text-blue-400 shadow transition hover:bg-blue-500/20">
-                    LinkedIn
-                </a>
-                <a href="https://github.com/kysgattu" target="_blank"
-                   class="rounded-2xl border border-emerald-500/40 bg-emerald-500/10 px-5 py-2 text-sm font-semibold text-emerald-400 shadow transition hover:bg-emerald-500/20">
-                    GitHub
-                </a>
-                <a href="Files/CV_KYSGattu_2025May.pdf"
-                   class="rounded-2xl border border-rose-400/40 bg-rose-400/10 px-5 py-2 text-sm font-semibold text-rose-300 shadow transition hover:bg-rose-400/20"
-                   download>
-                    Résumé ↧
-                </a>
-            </div>
+<!-- Animated aurora background -->
+<div class="aurora" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+    <span class="grid-overlay"></span>
+</div>
+
+<!-- ===== NAV ===== -->
+<header class="site-header" data-header>
+    <div class="nav-inner">
+        <a href="#top" class="brand" aria-label="Kamal Gattu - back to top">
+            <span class="brand-mark">KG</span>
+            <span class="brand-text">kysgattu<span class="brand-cursor">_</span></span>
+        </a>
+
+        <nav class="nav-links" data-menu aria-label="Primary">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle colour theme">
+                <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="4"/>
+                    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+                </svg>
+                <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+                </svg>
+            </button>
+            <button class="icon-btn menu-btn" type="button" data-menu-toggle aria-expanded="false"
+                    aria-label="Open menu">
+                <span class="menu-lines" aria-hidden="true"></span>
+            </button>
         </div>
-    </div>
-    <!-- Decorative background blur  -->
-    <div class="pointer-events-none absolute inset-0 -z-10">
-        <div class="absolute inset-0 bg-grid-small-[rgba(255,255,255,0.03)]"></div>
-    </div>
-
-    <!-- Scroll down indicator -->
-    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 animate-bounce text-zinc-400">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down">
-            <path d="m6 9 6 6 6-6"/>
-        </svg>
     </div>
 </header>
 
-<!-- Sticky nav -->
-<nav class="sticky top-0 z-50 backdrop-blur-sm backdrop-saturate-150 bg-zinc-950/80 border-b border-zinc-900/60 shadow-lg">
-    <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-2 text-sm font-medium uppercase tracking-wide text-zinc-300">
-        <span class="font-bold text-indigo-400">Portfolio</span>
-        <ul class="flex gap-4">
-            <li><a href="#about" class="hover:text-indigo-300">About</a></li>
-            <li><a href="#education" class="hover:text-indigo-300">Education</a></li>
-            <li><a href="#experience" class="hover:text-indigo-300">Experience</a></li>
-            <li><a href="#skills" class="hover:text-indigo-300">Skills</a></li>
-            <li><a href="#projects" class="hover:text-indigo-300">Projects</a></li>
-        </ul>
-    </div>
-</nav>
+<main id="main">
 
-<main class="mx-auto max-w-5xl space-y-5 px-4 py-16">
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="top">
+        <div class="container hero-grid">
+            <div class="hero-copy">
+                <p class="status-pill reveal">
+                    <span class="pulse" aria-hidden="true"></span>
+                    Systems Engineer @ Hooke Laboratories
+                </p>
+                <h1 class="hero-name reveal">
+                    Kamal Yeshodhar<br/>
+                    <span class="gradient-text">Shastry Gattu</span>
+                </h1>
+                <p class="hero-role reveal">
+                    <span class="mono prompt" aria-hidden="true">&gt;</span>
+                    I build
+                    <span class="typed" data-typed="software systems|machine learning & computer vision|IoT that watches the lab|automations that kill busywork|data pipelines">software systems</span><span
+                        class="caret" aria-hidden="true"></span>
+                </p>
+                <p class="hero-lead reveal">
+                    I lead a small engineering team shipping the software, ML and IoT tools that keep a preclinical
+                    research lab running — taking ideas from whiteboard sketches to production-ready solutions.
+                </p>
+                <p class="hero-loc mono reveal">📍 Greater Boston, MA</p>
 
-    <!-- ===== ABOUT ===== -->
-    <section id="about" class="scroll-mt-20">
-        <h2 class="text-3xl font-semibold text-indigo-400">About</h2>
-        <div class="mt-6 space-y-6 text-base leading-relaxed text-zinc-300 max-w-prose">
-            <p>
-                Hello! I’m Kamal — a Systems Engineer who enjoys taking ideas from whiteboard sketches to
-                production‑ready
-                solutions. My toolkit covers Python, Java, JavaScript, HTML/CSS, and SQL, and I’m most at home in a
-                Linux
-                terminal with Git close by.
-            </p>
+                <div class="cta-row reveal">
+                    <a class="btn btn-primary" href="mailto:kysgattu0502@gmail.com">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <path d="m22 7-10 6L2 7"/>
+                        </svg>
+                        Say hello
+                    </a>
+                    <a class="btn btn-ghost" href="Files/CV_KYSGattu_2026Sep.pdf" target="_blank" rel="noopener">
+                        Résumé
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M7 17 17 7M7 7h10v10"/>
+                        </svg>
+                    </a>
+                    <a class="icon-btn icon-btn-lg" href="https://www.linkedin.com/in/kysgattu" target="_blank"
+                       rel="noopener" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                            <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/>
+                        </svg>
+                    </a>
+                    <a class="icon-btn icon-btn-lg" href="https://github.com/kysgattu" target="_blank" rel="noopener"
+                       aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                            <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
 
-            <p class="font-medium text-indigo-300">Areas of focus</p>
-            <ul class="list-disc pl-5 space-y-1">
-                <li><strong>Software Development:</strong> design, build, and maintain full‑stack applications.</li>
-                <li><strong>Machine Learning:</strong> image &amp; text processing, deep &amp; transfer learning.</li>
+            <div class="hero-visual reveal">
+                <div class="avatar-ring">
+                    <img src="Files/profilepic-640.jpg" alt="Portrait of Kamal Gattu" width="640" height="640"/>
+                    <span class="avatar-shade" aria-hidden="true"></span>
+                </div>
+                <div class="float-chip chip-a mono">Python · ML · IoT</div>
+                <div class="float-chip chip-b mono">Data engineering</div>
+            </div>
+        </div>
 
-                <li><strong>Database Management:</strong> schema design, performance tuning on MySQL, PostgreSQL,
-                    Redshift, Oracle.
-                </li>
-                <li><strong>IoT with Raspberry Pi:</strong> prototype and deploy sensor‑driven lab solutions
-                    (novice‑expert level).
-                </li>
-                <li><strong>REST‑centric Tooling:</strong> architect robust software that consumes, enriches, and
-                    surfaces data via APIs.
-                </li>
-                <li><strong>Data Engineering:</strong> ETL with Informatica PowerCenter/IICS, SQL optimisation.</li>
-            </ul>
+        <a href="#stats" class="scroll-cue" aria-label="Scroll to content">
+            <span></span>
+        </a>
+    </section>
 
-            <p>
-                I like working where software, data, and hardware intersect — whether that’s automating lab workflows,
-                wiring up IoT sensors, or shipping ML models behind clean REST endpoints. Day‑to‑day, you’ll find me
-                iterating in VS Code or PyCharm, tracking work in JIRA, and keeping documentation tight in Markdown or
-                Confluence.
-            </p>
+    <!-- ===== STATS ===== -->
+    <section id="stats" class="container stats" aria-label="Highlights">
+        <div class="stat glass spot reveal">
+            <strong data-count="4" data-suffix="+">4+</strong>
+            <span>years across software, ML &amp; data engineering</span>
+        </div>
+        <div class="stat glass spot reveal">
+            <strong data-count="30" data-suffix="+">30+</strong>
+            <span>internal tools owned end to end at Hooke</span>
+        </div>
+        <div class="stat glass spot reveal">
+            <strong data-count="70" data-suffix="%">70%</strong>
+            <span>faster cost-data retrieval at UMass Lowell</span>
+        </div>
+        <div class="stat glass spot reveal">
+            <strong data-count="90" data-suffix="%">90%</strong>
+            <span>less manual campus-planning time with YOLO</span>
         </div>
     </section>
 
-    <!-- ===== EDUCATION ===== -->
-    <section id="education" class="scroll-mt-20">
-        <h2 class="text-3xl font-semibold text-indigo-400">Education</h2>
-        <div class="mt-6 grid gap-6 sm:grid-cols-2">
-            <article class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40">
-                <h3 class="text-lg font-bold text-zinc-200">M.S. Computer Science</h3>
-                <p class="mt-1 text-sm text-zinc-400">University of Massachusetts Lowell • GPA 3.736 / 4 • Dec
-                    2023</p>
-            </article>
-            <article class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40">
-                <h3 class="text-lg font-bold text-zinc-200">B.Tech Computer Science &amp; Engineering</h3>
-                <p class="mt-1 text-sm text-zinc-400">JNTU Hyderabad • GPA 6.73 / 10 • Sep 2020</p>
-            </article>
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section container">
+        <header class="section-head reveal">
+            <p class="eyebrow mono">// about</p>
+            <h2>Where software, data &amp; hardware meet</h2>
+        </header>
+
+        <div class="about-grid">
+            <div class="about-text reveal">
+                <p>
+                    Hello! I'm Kamal — a Systems Engineer who enjoys taking ideas from whiteboard sketches to
+                    production-ready solutions. These days I lead a small engineering team at a preclinical research
+                    laboratory, where I own a portfolio of <strong>30+ internal tools</strong> spanning computer vision,
+                    workflow automation, IoT monitoring, data security and infrastructure.
+                </p>
+                <p>
+                    I take projects end to end — requirements, design, build, deployment and long-term support — with
+                    disciplined version control and DEV/PROD practices keeping things steady. Before this, I built data
+                    tooling and a YOLO pedestrian counter at UMass Lowell (where I earned my M.S. in Computer Science),
+                    and ETL pipelines for a 5M+ customer CRM at Cognizant.
+                </p>
+                <p>
+                    I like working where software, data and hardware intersect — whether that's wiring up sensors to
+                    protect lab equipment, automating the busywork out of a team's week, or shipping ML models behind
+                    clean, friendly interfaces.
+                </p>
+            </div>
+
+            <ul class="focus-grid" aria-label="Areas of focus">
+                <li class="glass spot reveal">
+                    <span class="focus-idx mono">01</span>
+                    <h3>Software Development</h3>
+                    <p>Desktop, web &amp; automation tools, designed, built and maintained end to end.</p>
+                </li>
+                <li class="glass spot reveal">
+                    <span class="focus-idx mono">02</span>
+                    <h3>ML &amp; Computer Vision</h3>
+                    <p>Image processing, pose estimation, deep &amp; transfer learning.</p>
+                </li>
+                <li class="glass spot reveal">
+                    <span class="focus-idx mono">03</span>
+                    <h3>LLMs &amp; Generative AI</h3>
+                    <p>LLM pipelines, prompt engineering, and guiding company‑wide AI adoption.</p>
+                </li>
+                <li class="glass spot reveal">
+                    <span class="focus-idx mono">04</span>
+                    <h3>IoT &amp; Hardware</h3>
+                    <p>Raspberry Pi, MQTT, RFID &amp; Home Assistant for real‑time lab monitoring.</p>
+                </li>
+                <li class="glass spot reveal">
+                    <span class="focus-idx mono">05</span>
+                    <h3>Infrastructure &amp; Security</h3>
+                    <p>Linux servers, Docker, ZFS, Samba/AD and an in‑house email DLP platform.</p>
+                </li>
+                <li class="glass spot reveal">
+                    <span class="focus-idx mono">06</span>
+                    <h3>Data Engineering</h3>
+                    <p>ETL with Informatica, SQL tuning, REST integrations and data‑quality tooling.</p>
+                </li>
+            </ul>
         </div>
     </section>
 
     <!-- ===== EXPERIENCE ===== -->
-    <section id="experience" class="scroll-mt-20">
-        <h2 class="text-3xl font-semibold text-indigo-400">Experience</h2>
-        <div class="mt-6 space-y-10">
+    <section id="experience" class="section container">
+        <header class="section-head reveal">
+            <p class="eyebrow mono">// experience</p>
+            <h2>What I've been building</h2>
+        </header>
+
+        <ol class="timeline">
             <!-- Hooke Laboratories -->
-            <div class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40">
-                <header class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                    <h3 class="text-lg font-bold text-zinc-200">Systems Engineer – Hooke Laboratories, LLC</h3>
-                    <span class="text-sm text-zinc-400">Mar 2024 – Present</span>
-                </header>
-                <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-zinc-300">
-                    <li>Led a team to digitise office operations with bespoke software, streamlining workflows and
-                        boosting efficiency. <!-- summary line --> </li>
-                    <li>Designed &amp; deployed machine‑learning models for tissue analysis, driving research
-                        precision and scalability.
-                    </li>
-                    <li>Built and maintained large‑language‑model pipelines that surface instant answers for
-                        Operations.
-                    </li>
-                    <li>Created instrument‑control software that optimises analytical workflows for research
-                        teams.
-                    </li>
-                    <li>Designed Raspberry‑Pi‑based IoT devices to monitor and secure lab equipment in real time.
-                    </li>
-                    <li>Automated project management with Google Apps Script, enhancing collaboration and data
-                        transparency.
-                    </li>
-                    <li>Served as company‑wide AI/ML adviser, evangelising best practices and guiding adoption.</li>
-                    <li>Strengthened IT operations &amp; security by improving backup routines and incident
-                        response.
-                    </li>
-                </ul>
-            </div>
+            <li class="tl-item reveal">
+                <span class="tl-node tl-node-live" aria-hidden="true"></span>
+                <article class="glass spot job">
+                    <header class="job-head">
+                        <div>
+                            <h3>Systems Engineer</h3>
+                            <p class="job-org">Hooke Laboratories, LLC</p>
+                        </div>
+                        <span class="job-date mono">Mar 2024 — Present</span>
+                    </header>
+
+                    <div class="job-groups">
+                        <div class="job-group">
+                            <h4 class="mono">Leadership &amp; ownership</h4>
+                            <ul>
+                                <li><strong>Lead a small engineering team</strong> as technical owner of 30+ internal
+                                    tools, from requirements through deployment and long‑term support — with version
+                                    control, documentation and DEV/PROD release discipline.
+                                </li>
+                                <li><strong>Company‑wide AI/ML adviser</strong> — evaluating tools, giving strategic
+                                    guidance and championing best practices to drive adoption.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="job-group">
+                            <h4 class="mono">Security &amp; infrastructure</h4>
+                            <ul>
+                                <li><strong>Architected an in‑house DLP platform</strong> for outbound email, combining
+                                    REST APIs, Google Workspace APIs and Linux scheduling to safeguard sensitive data.
+                                </li>
+                                <li><strong>Built &amp; run Linux servers</strong> and containerised services (Docker,
+                                    ZFS, Samba + Active Directory), partnering with IT on security, backups and daily
+                                    operations.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="job-group">
+                            <h4 class="mono">Research software &amp; computer vision</h4>
+                            <ul>
+                                <li><strong>Research tools desktop suite</strong> — Python applications that support
+                                    entire laboratory workflows, from sample processing through analysis and reporting,
+                                    built alongside the scientists who use them.
+                                </li>
+                                <li><strong>Behavioural analysis pipelines</strong> using DeepLabCut pose estimation and
+                                    multi‑camera 3D reconstruction for more precise, scalable preclinical research.
+                                </li>
+                                <li><strong>ML models for tissue analysis</strong>, bringing automation and precision to
+                                    histopathology workflows.
+                                </li>
+                                <li><strong>Instrument‑control software</strong> that streamlines analytical workflows for
+                                    research teams.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="job-groups" id="hooke-more" hidden>
+                        <div class="job-group">
+                            <h4 class="mono">IoT &amp; hardware</h4>
+                            <ul>
+                                <li><strong>RFID timesheet system</strong> on Raspberry Pi, Flask and MariaDB, replacing
+                                    manual attendance and streamlining payroll across multiple sites.
+                                </li>
+                                <li><strong>24/7 equipment monitoring</strong> with Raspberry Pi, MQTT, MySQL and Home
+                                    Assistant — real‑time alerts that protect research materials around the clock.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="job-group">
+                            <h4 class="mono">Automation, data &amp; AI</h4>
+                            <ul>
+                                <li><strong>Document operations suite</strong> adopted org‑wide — Python, Office COM
+                                    automation and PyInstaller with native Windows shell integration.
+                                </li>
+                                <li><strong>LLM pipelines</strong> that give Operations fast, accurate answers from
+                                    organisational data.
+                                </li>
+                                <li><strong>Python &amp; Apps Script automations</strong> across Sheets, Drive and Gmail
+                                    for alerting, reporting, scheduling and billing — cutting manual effort
+                                    significantly.
+                                </li>
+                                <li><strong>Data‑quality tooling</strong> with automated validation, change detection and
+                                    anomaly flagging for business‑critical spreadsheets and study records.
+                                </li>
+                                <li><strong>Enterprise document search</strong> using Apache Tika, text extraction and
+                                    pattern matching to make records faster to find and analyse.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <button class="expand-btn mono" type="button" data-expand aria-controls="hooke-more"
+                            aria-expanded="false">
+                        <span data-expand-label>Show all 15 highlights</span>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </button>
+
+                    <ul class="tags" aria-label="Key technologies">
+                        <li>Python</li>
+                        <li>Tkinter</li>
+                        <li>DeepLabCut</li>
+                        <li>Flask</li>
+                        <li>Raspberry Pi</li>
+                        <li>MQTT</li>
+                        <li>Docker</li>
+                        <li>Google Workspace APIs</li>
+                        <li>LLMs</li>
+                    </ul>
+                </article>
+            </li>
 
             <!-- UMass Lowell -->
-            <div class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40">
-                <header class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                    <h3 class="text-lg font-bold text-zinc-200">Facilities Information Systems Assistant –
-                        University of Massachusetts Lowell</h3>
-                    <span class="text-sm text-zinc-400">Jan 2023 – Dec 2023</span>
-                </header>
-                <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-zinc-300">
-                    <li>Engineered a Python codebase around e‑Builder REST API to extract and validate cost data,
-                        automating multi‑format reports.
-                    </li>
-                    <li>Refactored data import logic, cutting retrieval time by 70% and eliminating manual
-                        bottlenecks.
-                    </li>
-                    <li>Integrated heterogeneous data into MS SQL Server for reconciliation dashboards despite
-                        record‑limit constraints.
-                    </li>
-                    <li>Built HTML front‑ends and Tkinter dashboards to simplify work‑order management for
-                        non‑technical users.
-                    </li>
-                    <li>Developed ML‑powered pedestrian‑counting system with YOLO, reducing manual campus‑planning
-                        effort by 90%.
-                    </li>
-                    <li>Devised an intuitive interface for video uploads and region selection to enable self‑service
-                        analytics.
-                    </li>
-                    <li>Conducted unit &amp; UAT testing, hardening the system’s stability and enhancing UX.</li>
-                </ul>
-            </div>
+            <li class="tl-item reveal">
+                <span class="tl-node" aria-hidden="true"></span>
+                <article class="glass spot job">
+                    <header class="job-head">
+                        <div>
+                            <h3>Facilities Information Systems Assistant - Python Developer</h3>
+                            <p class="job-org">University of Massachusetts Lowell</p>
+                        </div>
+                        <span class="job-date mono">Jan 2023 — Dec 2023</span>
+                    </header>
+                    <div class="job-groups">
+                        <div class="job-group">
+                            <h4 class="mono">Cost data integration &amp; reporting</h4>
+                            <ul>
+                                <li>Engineered a Python codebase around the e‑Builder REST API to extract and validate
+                                    cost data (CSV/XML), automating multi‑team reports.
+                                </li>
+                                <li>Refactored import logic with iterative retrieval, <strong>cutting retrieval time by
+                                    70%</strong>.
+                                </li>
+                                <li>Integrated data from multiple systems into MS SQL Server for cost reconciliation,
+                                    working around API record limits.
+                                </li>
+                                <li>Built HTML front‑ends and Tkinter dashboards that simplified work‑order management,
+                                    backed by unit &amp; UAT testing.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="job-group">
+                            <h4 class="mono">Pedestrian detection system</h4>
+                            <ul>
+                                <li>Led an ML‑powered pedestrian detection system for Campus Planning, using YOLO with
+                                    real‑time tracking to detect, follow and count people across campus pathways.
+                                </li>
+                                <li>Built an interface to upload videos and draw regions of interest — <strong>reducing
+                                    manual planning time by 90%</strong>.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="tags" aria-label="Key technologies">
+                        <li>Python</li>
+                        <li>REST APIs</li>
+                        <li>MS SQL Server</li>
+                        <li>YOLO</li>
+                        <li>Tkinter</li>
+                    </ul>
+                </article>
+            </li>
 
             <!-- Cognizant -->
-            <div class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40">
-                <header class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                    <h3 class="text-lg font-bold text-zinc-200">Programmer Analyst Trainee – Cognizant (Data
-                        Integration / ETL)</h3>
-                    <span class="text-sm text-zinc-400">Dec 2020 – Nov 2021</span>
-                </header>
-                <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-zinc-300">
-                    <li>Optimised data‑warehouse ETL for an automotive CRM (>5 M customers), improving query
-                        performance &amp; processing speed.
-                    </li>
-                    <li>Designed complex mappings and workflows in Informatica PowerCenter, streamlining nightly
-                        loads.
-                    </li>
-                    <li>Administered PostgreSQL &amp; Amazon Redshift back‑ends, reducing downtime by 10% through
-                        proactive maintenance.
-                    </li>
-                    <li>Authored comprehensive documentation to accelerate onboarding and facilitate
-                        troubleshooting.
-                    </li>
-                    <li>Collaborated with cross‑functional teams to ensure data accuracy and integrity across
-                        pipelines.
-                    </li>
+            <li class="tl-item reveal">
+                <span class="tl-node" aria-hidden="true"></span>
+                <article class="glass spot job">
+                    <header class="job-head">
+                        <div>
+                            <h3>Programmer Analyst Trainee - Data Integration (ETL) Developer</h3>
+                            <p class="job-org">Cognizant Technology Solutions</p>
+                        </div>
+                        <span class="job-date mono">Dec 2020 — Nov 2021</span>
+                    </header>
+                    <ul class="job-list">
+                        <li>Optimised a data warehouse for an automotive CRM with <strong>5M+ customers</strong>,
+                            improving query performance and cutting processing time.
+                        </li>
+                        <li>Designed advanced mappings and workflows in Informatica PowerCenter, streamlining ETL
+                            operations.
+                        </li>
+                        <li>Administered PostgreSQL &amp; Amazon Redshift back‑ends, <strong>reducing downtime by
+                            10%</strong> through proactive maintenance.
+                        </li>
+                        <li>Authored system documentation that sped up knowledge transfer and troubleshooting.</li>
+                    </ul>
+                    <ul class="tags" aria-label="Key technologies">
+                        <li>Informatica PowerCenter</li>
+                        <li>PostgreSQL</li>
+                        <li>Amazon Redshift</li>
+                        <li>SQL</li>
+                    </ul>
+                </article>
+            </li>
+        </ol>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section container">
+        <header class="section-head reveal">
+            <p class="eyebrow mono">// skills</p>
+            <h2>Toolbox</h2>
+        </header>
+
+        <div class="skills-grid">
+            <div class="glass spot skill-card reveal">
+                <h3>Languages</h3>
+                <ul class="chips">
+                    <li>Python</li><li>Java</li><li>C</li><li>C++</li><li>C#</li><li>JavaScript</li>
+                    <li>HTML/CSS</li><li>Google Apps Script</li><li>PowerShell</li><li>Bash</li>
+                </ul>
+            </div>
+            <div class="glass spot skill-card reveal">
+                <h3>Machine Learning &amp; AI</h3>
+                <ul class="chips">
+                    <li>Computer Vision</li><li>Image Processing</li><li>NLP</li><li>Deep Learning</li>
+                    <li>Transfer Learning</li><li>Generative AI</li><li>Prompt Engineering</li>
+                </ul>
+            </div>
+            <div class="glass spot skill-card reveal">
+                <h3>Python Libraries</h3>
+                <ul class="chips">
+                    <li>NumPy</li><li>Pandas</li><li>scikit‑learn</li><li>Keras</li><li>TensorFlow</li>
+                    <li>PyTorch</li><li>NLTK</li><li>OpenCV</li><li>Matplotlib</li><li>Tkinter</li>
+                    <li>gspread</li><li>Apache Tika</li>
+                </ul>
+            </div>
+            <div class="glass spot skill-card reveal">
+                <h3>ML Tools</h3>
+                <ul class="chips">
+                    <li>Hugging Face</li><li>Haystack</li><li>Ultralytics</li><li>DeepLabCut</li>
+                </ul>
+            </div>
+            <div class="glass spot skill-card reveal">
+                <h3>Databases</h3>
+                <ul class="chips">
+                    <li>PL/SQL</li><li>T‑SQL</li><li>Oracle SQL</li><li>MySQL</li><li>MariaDB</li>
+                    <li>MS SQL Server</li><li>PostgreSQL</li><li>Amazon Redshift</li>
+                </ul>
+            </div>
+            <div class="glass spot skill-card reveal">
+                <h3>Infrastructure &amp; IoT</h3>
+                <ul class="chips">
+                    <li>Linux Server Admin</li><li>ZFS</li><li>Samba</li><li>Active Directory</li>
+                    <li>Raspberry Pi</li><li>MQTT</li><li>Home Assistant</li><li>RFID</li><li>Tailscale</li>
+                </ul>
+            </div>
+            <div class="glass spot skill-card reveal">
+                <h3>Deployment</h3>
+                <ul class="chips">
+                    <li>Flask</li><li>Docker</li><li>Streamlit</li><li>PyInstaller</li>
+                </ul>
+            </div>
+            <div class="glass spot skill-card reveal">
+                <h3>ETL</h3>
+                <ul class="chips">
+                    <li>Informatica PowerCenter</li><li>Informatica IICS</li>
+                </ul>
+            </div>
+            <div class="glass spot skill-card skill-card-wide reveal">
+                <h3>Developer Tools</h3>
+                <ul class="chips">
+                    <li>Linux</li><li>REST APIs</li><li>Git</li><li>GitHub</li><li>JIRA</li><li>PyCharm</li>
+                    <li>VS Code</li><li>Jupyter</li><li>Eclipse</li><li>MS Office</li><li>Office COM Automation</li>
+                    <li>Google Workspace APIs</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- ========= SKILLS ========= -->
-    <section id="skills" class="scroll-mt-20">
-        <h2 class="text-3xl font-semibold text-indigo-400">Skills</h2>
-        <div class="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            <!-- Card helper component -->
-            <!-- 1 -->
-            <div class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40"><h3
-                    class="mb-3 text-lg font-semibold text-zinc-200">Programming Languages</h3>
-                <ul class="flex flex-wrap gap-2 text-sm text-zinc-300">
-                    <li class="badge">Python</li>
-                    <li class="badge">Java</li>
-                    <li class="badge">C/C++</li>
-                    <li class="badge">C#</li>
-                    <li class="badge">JavaScript</li>
-                    <li class="badge">HTML/CSS</li>
-                    <li class="badge">Google Apps Script</li>
-                </ul>
-            </div>
-            <!-- 2 -->
-            <div class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40"><h3
-                    class="mb-3 text-lg font-semibold text-zinc-200">Databases</h3>
-                <ul class="flex flex-wrap gap-2 text-sm text-zinc-300">
-                    <li class="badge">Oracle SQL</li>
-                    <li class="badge">MySQL</li>
-                    <li class="badge">MariaDB</li>
-                    <li class="badge">MS SQL Server</li>
-                    <li class="badge">PostgreSQL</li>
-                    <li class="badge">Amazon Redshift</li>
-                    <li class="badge">PL/SQL</li>
-                    <li class="badge">T‑SQL</li>
-                </ul>
-            </div>
-            <!-- 3 -->
-            <div class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40"><h3
-                    class="mb-3 text-lg font-semibold text-zinc-200">Python Libraries</h3>
-                <ul class="flex flex-wrap gap-2 text-sm text-zinc-300">
-                    <li class="badge">NumPy</li>
-                    <li class="badge">Pandas</li>
-                    <li class="badge">scikit‑learn</li>
-                    <li class="badge">TensorFlow</li>
-                    <li class="badge">Keras</li>
-                    <li class="badge">PyTorch</li>
-                    <li class="badge">OpenCV</li>
-                    <li class="badge">NLTK</li>
-                    <li class="badge">Matplotlib</li>
-                </ul>
-            </div>
-            <!-- 4 -->
-            <div class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40"><h3
-                    class="mb-3 text-lg font-semibold text-zinc-200">Deployment Tools</h3>
-                <ul class="flex flex-wrap gap-2 text-sm text-zinc-300">
-                    <li class="badge">Flask</li>
-                    <li class="badge">Docker</li>
-                    <li class="badge">Streamlit</li>
-                </ul>
-            </div>
-            <!-- 5 -->
-            <div class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40"><h3
-                    class="mb-3 text-lg font-semibold text-zinc-200">ML &amp; AI Concepts</h3>
-                <ul class="flex flex-wrap gap-2 text-sm text-zinc-300">
-                    <li class="badge">Computer Vision</li>
-                    <li class="badge">NLP</li>
-                    <li class="badge">Deep Learning</li>
-                    <li class="badge">Transfer Learning</li>
-                    <li class="badge">Generative AI</li>
-                    <li class="badge">Prompt Engineering</li>
-                </ul>
-            </div>
-            <!-- 6 -->
-            <div class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40"><h3
-                    class="mb-3 text-lg font-semibold text-zinc-200">ML Tools</h3>
-                <ul class="flex flex-wrap gap-2 text-sm text-zinc-300">
-                    <li class="badge">Hugging Face</li>
-                    <li class="badge">Haystack</li>
-                    <li class="badge">Ultralytics</li>
-                </ul>
-            </div>
-            <!-- 7 -->
-            <div class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40"><h3
-                    class="mb-3 text-lg font-semibold text-zinc-200">ETL Tools</h3>
-                <ul class="flex flex-wrap gap-2 text-sm text-zinc-300">
-                    <li class="badge">Informatica PowerCenter</li>
-                    <li class="badge">Informatica IICS</li>
-                </ul>
-            </div>
-            <!-- 8 -->
-            <div class="rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40"><h3
-                    class="mb-3 text-lg font-semibold text-zinc-200">Dev &amp; Productivity</h3>
-                <ul class="flex flex-wrap gap-2 text-sm text-zinc-300">
-                    <li class="badge">Linux</li>
-                    <li class="badge">REST APIs</li>
-                    <li class="badge">Git</li>
-                    <li class="badge">JIRA</li>
-                    <li class="badge">PyCharm</li>
-                    <li class="badge">VS Code</li>
-                    <li class="badge">Jupyter</li>
-                    <li class="badge">Eclipse</li>
-                    <li class="badge">MS Office</li>
-                    <li class="badge">Google Workspace</li>
-                </ul>
-            </div>
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section container">
+        <header class="section-head reveal">
+            <p class="eyebrow mono">// projects</p>
+            <h2>Things I've built on the side</h2>
+        </header>
+
+        <div class="filter-bar reveal" data-filter-bar role="group" aria-label="Filter projects">
+            <button type="button" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" data-filter="cv" aria-pressed="false">Computer Vision</button>
+            <button type="button" data-filter="nlp" aria-pressed="false">NLP</button>
+            <button type="button" data-filter="ml" aria-pressed="false">Machine Learning</button>
+            <button type="button" data-filter="web" aria-pressed="false">Web &amp; Systems</button>
         </div>
-    </section>
-    <!-- ========= PROJECTS ========= -->
-    <section id="projects" class="scroll-mt-20">
-        <h2 class="text-3xl font-semibold text-indigo-400">Projects</h2>
-        <div class="mt-6 grid gap-8 md:grid-cols-2">
-            <!-- 1: Pedestrian Detection -->
-            <article
-                    class="group relative overflow-hidden rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40 transition-transform hover:-translate-y-1 hover:shadow-lg">
-                <h3 class="text-lg font-bold text-zinc-200">Pedestrian Detection System using YOLO</h3>
-                <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-300">
-                    <li>Spearheaded the development of a cutting-edge Pedestrian Detection System for the University of
-                        Massachusetts Lowell's Campus Planning Department.
-                    </li>
-                    <li>Created an intuitive UI to upload videos and draw detection regions; runs real‑time
-                        detect‑track‑count.
-                    </li>
-                    <li>Boosted planning efficiency by automating tallies that previously took hours.</li>
-                </ul>
-                <a href="https://github.com/kysgattu/Pedestrian-Detection-System" target="_blank"
-                   class="absolute inset-0" aria-label="GitHub – Pedestrian Detection"></a>
-            </article>
 
-            <!-- 2: Chest X‑Ray -->
-            <article
-                    class="group relative overflow-hidden rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40 transition-transform hover:-translate-y-1 hover:shadow-lg">
-                <h3 class="text-lg font-bold text-zinc-200">Chest X‑Ray COVID‑19 Classifier</h3>
-                <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-300">
-                    <li>
-                        Built deep‑learning pipeline (ResNet, VGG, LeNet) to train models capable of classifying chest
-                        X-ray images into four respiratory illnesses on 42k lung X-ray images.
+        <div class="projects-grid">
+            <article class="glass spot project reveal" data-tags="nlp">
+                <p class="project-meta mono"><span>NLP</span><span>Oct - Dec 2023</span></p>
+                <h3>News Article Summarization: Cross‑domain Adaptability</h3>
+                <ul>
+                    <li>Built extractive (TextRank) and abstractive (BART) summarizers, improving BART by 20% over
+                        previous implementations.
                     </li>
-                    <li>Implemented an advanced visualization technique GRADCAM to identify and highlight areas affected
-                        by the virus within the lungs, aiding medical professionals in targeted treatment approaches.
+                    <li>Consistently beat benchmark ROUGE scores versus the original model and a BBC‑News fine‑tune,
+                        confirming cross‑domain versatility.
                     </li>
                 </ul>
-                <a href="https://github.com/kysgattu/Chest-X-Ray-Classification-to-detect-COVID-19-using-Deep-Neural-Networks"
-                   target="_blank" class="absolute inset-0" aria-label="GitHub – Chest X‑Ray"></a>
+                <a class="project-link mono"
+                   href="https://github.com/kysgattu/Evaluating-Cross-Domain-Adaptability-Of-Text-Summarizer-News-Article-Summarization"
+                   target="_blank" rel="noopener"
+                   aria-label="News Article Summarization on GitHub">View on GitHub ↗</a>
             </article>
 
-            <!-- 3: News Article Summarization -->
-            <article
-                    class="group relative overflow-hidden rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40 transition-transform hover:-translate-y-1 hover:shadow-lg">
-                <h3 class="text-lg font-bold text-zinc-200">News Article Summarization: Evaluation of Cross-domain
-                    Adaptability of Text Summarizer</h3>
-                <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-300">
-                    <li>Engineered advanced text summarizers, seamlessly integrating Extractive (TextRank) and
-                        Abstractive (BART) techniques.
+            <article class="glass spot project reveal" data-tags="cv">
+                <p class="project-meta mono"><span>Computer Vision</span><span>Feb - May 2023</span></p>
+                <h3>Chest X‑Ray COVID‑19 Classifier</h3>
+                <ul>
+                    <li>Remodelled ResNet, VGG and LeNet to classify 42k lung X‑rays into four respiratory illnesses —
+                        92% accuracy on COVID‑19.
                     </li>
-                    <li>Enhanced BART Model performance significantly, achieving a 20% improvement over previous
-                        implementations.
-                    </li>
-                    <li>Streamlined a thorough evaluation of cross-domain adaptability, consistently outperforming
-                        benchmark ROUGE scores in contrast to the model's original implementation and a fine-tuned BBC
-                        News model.
+                    <li>Used Grad‑CAM to highlight affected lung regions, helping clinicians target treatment.</li>
+                </ul>
+                <a class="project-link mono"
+                   href="https://github.com/kysgattu/Chest-X-Ray-Classification-to-detect-COVID-19-using-Deep-Neural-Networks"
+                   target="_blank" rel="noopener" aria-label="Chest X-Ray Classifier on GitHub">View on GitHub ↗</a>
+            </article>
+
+            <article class="glass spot project reveal" data-tags="cv">
+                <p class="project-meta mono"><span>Computer Vision</span><span>2023 · UMass Lowell</span></p>
+                <h3>Pedestrian Detection System using YOLO</h3>
+                <ul>
+                    <li>Detect‑track‑count pipeline for UMass Lowell's Campus Planning department.</li>
+                    <li>Upload a video, draw regions of interest, get tallies that used to take hours — 90% less
+                        manual effort.
                     </li>
                 </ul>
-                <a href="https://github.com/kysgattu/Evaluating-Cross-Domain-Adaptability-Of-Text-Summarizer-News-Article-Summarization"
-                   target="_blank"
-                   class="absolute inset-0" aria-label="GitHub – Climate Sentiment"></a>
+                <a class="project-link mono" href="https://github.com/kysgattu/Pedestrian-Detection-System"
+                   target="_blank" rel="noopener" aria-label="Pedestrian Detection System on GitHub">View on GitHub
+                    ↗</a>
             </article>
 
-            <!-- 4: Climate Change Sentiment -->
-            <article
-                    class="group relative overflow-hidden rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40 transition-transform hover:-translate-y-1 hover:shadow-lg">
-                <h3 class="text-lg font-bold text-zinc-200">Climate Change Sentiment Analysis</h3>
-                <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-300">
-                    <li>Analysed 43k tweets on climate change; pipeline with NLTK preprocessing and Bi‑LSTM model.</li>
-                    <li>Employed Deep Learning Model with a Recurrent Neural Network approach using features including
-                        text in tweets and the frequency of specific keywords.
+            <article class="glass spot project reveal" data-tags="nlp">
+                <p class="project-meta mono"><span>NLP</span><span>Jan - Apr 2022</span></p>
+                <h3>Climate Change Sentiment Analysis</h3>
+                <ul>
+                    <li>Sentiment &amp; exploratory analysis of 43k+ tweets to understand public opinion on climate
+                        change.
                     </li>
-                    <li>Achieved 96% accuracy; validated robustness on fresh Twitter scrape.</li>
+                    <li>RNN model using tweet text and keyword frequency hit 96% accuracy.</li>
                 </ul>
-                <a href="https://github.com/kysgattu/Climate-Change-Twitter-Sentiment-Analysis" target="_blank"
-                   class="absolute inset-0" aria-label="GitHub – Climate Sentiment"></a>
+                <a class="project-link mono" href="https://github.com/kysgattu/Climate-Change-Twitter-Sentiment-Analysis"
+                   target="_blank" rel="noopener" aria-label="Climate Change Sentiment Analysis on GitHub">View on
+                    GitHub ↗</a>
             </article>
 
-            <!-- 5: Face Mask Detection -->
-            <article
-                    class="group relative overflow-hidden rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40 transition-transform hover:-translate-y-1 hover:shadow-lg">
-                <h3 class="text-lg font-bold text-zinc-200">Face Mask Detection</h3>
-                <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-300">
-                    <li>CNN (Keras) model classifies Mask/No‑Mask with 90% accuracy on webcam streams.</li>
-                    <li>Real‑time alerts overlay &amp; beep for non‑compliance using OpenCV.</li>
-                </ul>
-                <a href="https://github.com/kysgattu/Face-Mask-Detection" target="_blank" class="absolute inset-0"
-                   aria-label="GitHub – Face Mask"></a>
-            </article>
-
-            <!-- 6: Recolored Image Forgery Detection -->
-            <article
-                    class="group relative overflow-hidden rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40 transition-transform hover:-translate-y-1 hover:shadow-lg">
-                <h3 class="text-lg font-bold text-zinc-200">Recolored Image Forgery Detection</h3>
-                <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-300">
-                    <li>Implemented IEEE‑TIFS '19 deep discriminative model in TensorFlow to detect colour‑transfer
-                        forgeries.
+            <article class="glass spot project reveal" data-tags="ml">
+                <p class="project-meta mono"><span>Machine Learning</span><span>Feb - Apr 2022</span></p>
+                <h3>Citizens Income Prediction</h3>
+                <ul>
+                    <li>Compared ML algorithms on the 48k‑sample Adult Income dataset — 15% fewer misclassifications
+                        than baseline.
                     </li>
-                    <li>Tested on forged &amp; internet images—accuracy improved 10% over baseline.</li>
+                    <li>Confusion matrix, F1, precision &amp; recall analysis crowned Random Forest at 92% accuracy.</li>
                 </ul>
-                <a href="https://github.com/kysgattu/Recolored-Image-Detection" target="_blank" class="absolute inset-0"
-                   aria-label="GitHub – Recolored Images"></a>
+                <a class="project-link mono"
+                   href="https://github.com/kysgattu/Citizens-Income-Prediction_Comparision-Of-ML-Algorithms"
+                   target="_blank" rel="noopener" aria-label="Citizens Income Prediction on GitHub">View on GitHub
+                    ↗</a>
             </article>
 
-            <!-- 7: Citizens Income Prediction -->
-            <article
-                    class="group relative overflow-hidden rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40 transition-transform hover:-translate-y-1 hover:shadow-lg">
-                <h3 class="text-lg font-bold text-zinc-200">Citizens Income Prediction</h3>
-                <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-300">
-                    <li>Benchmarked 6 ML algorithms on UCI Adult dataset (48k rows); Random Forest hit 92% accuracy.
-                    </li>
-                    <li>Delivered comparative metrics (precision +25%, recall +20% over baseline).</li>
+            <article class="glass spot project reveal" data-tags="cv">
+                <p class="project-meta mono"><span>Computer Vision</span><span>Oct - Nov 2020</span></p>
+                <h3>Face Mask Detection</h3>
+                <ul>
+                    <li>CNN classifier with 90% accuracy on photos, video and live webcam streams.</li>
+                    <li>Real‑time OpenCV overlay above each face, with a beep for non‑compliance.</li>
                 </ul>
-                <a href="https://github.com/kysgattu/Citizens-Income-Prediction_Comparision-Of-ML-Algorithms"
-                   target="_blank" class="absolute inset-0" aria-label="GitHub – Income Prediction"></a>
+                <a class="project-link mono" href="https://github.com/kysgattu/Face-Mask-Detection" target="_blank"
+                   rel="noopener" aria-label="Face Mask Detection on GitHub">View on GitHub ↗</a>
             </article>
 
-            <!-- 8: Diabetes Risk Prediction -->
-            <article
-                    class="group relative overflow-hidden rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40 transition-transform hover:-translate-y-1 hover:shadow-lg">
-                <h3 class="text-lg font-bold text-zinc-200">Diabetes Risk Prediction</h3>
-                <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-300">
-                    <li>Trained XGBoost &amp; Logistic models on Pima dataset; Streamlit app with SHAP explainability.
+            <article class="glass spot project reveal" data-tags="cv">
+                <p class="project-meta mono"><span>Computer Vision</span><span>Jan - Apr 2020</span></p>
+                <h3>Recolored Image Forgery Detection</h3>
+                <ul>
+                    <li>Implemented an IEEE deep discriminative model to detect colour‑transfer forgeries.</li>
+                    <li>Tested on forged and internet‑collected images — 10% accuracy improvement.</li>
+                </ul>
+                <a class="project-link mono" href="https://github.com/kysgattu/Recolored-Image-Detection"
+                   target="_blank" rel="noopener" aria-label="Recolored Image Detection on GitHub">View on GitHub
+                    ↗</a>
+            </article>
+
+            <article class="glass spot project reveal" data-tags="web">
+                <p class="project-meta mono"><span>Web &amp; Systems</span><span>Jun - Nov 2019</span></p>
+                <h3>Aadhaar‑Based Online Voting System</h3>
+                <ul>
+                    <li>JSP + SQL voting channel used by 2,000+ students in a student‑body election.</li>
+                    <li>20% higher turnout and 15% lower costs, with confidentiality and accuracy intact.</li>
+                </ul>
+                <a class="project-link mono" href="https://github.com/kysgattu/Aadhaar-Based-Online-Voting-System"
+                   target="_blank" rel="noopener" aria-label="Aadhaar-Based Online Voting System on GitHub">View on
+                    GitHub ↗</a>
+            </article>
+
+            <article class="glass spot project reveal" data-tags="ml">
+                <p class="project-meta mono"><span>Machine Learning</span><span>Health</span></p>
+                <h3>Diabetes Risk Prediction</h3>
+                <ul>
+                    <li>XGBoost &amp; logistic models on the Pima dataset, served in a Streamlit app with SHAP
+                        explainability.
                     </li>
                     <li>Helps clinicians interpret top risk factors for preventive care.</li>
                 </ul>
-                <a href="https://github.com/kysgattu/Diabetes-Risk-Prediction" target="_blank" class="absolute inset-0"
-                   aria-label="GitHub – Diabetes"></a>
+                <a class="project-link mono" href="https://github.com/kysgattu/Diabetes-Risk-Prediction" target="_blank"
+                   rel="noopener" aria-label="Diabetes Risk Prediction on GitHub">View on GitHub ↗</a>
             </article>
 
-            <!-- 9: Student Knowledge Modelling -->
-            <article
-                    class="group relative overflow-hidden rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40 transition-transform hover:-translate-y-1 hover:shadow-lg">
-                <h3 class="text-lg font-bold text-zinc-200">Student Knowledge Modelling</h3>
-                <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-300">
-                    <li>Predicts students’ mastery of DC Machines concepts; instance‑based classifier boosts F1 by
-                        7%.
+            <article class="glass spot project reveal" data-tags="ml">
+                <p class="project-meta mono"><span>Machine Learning</span><span>Education</span></p>
+                <h3>Student Knowledge Modelling</h3>
+                <ul>
+                    <li>Predicts students' mastery of DC Machines concepts; instance‑based classifier boosts F1 by 7%.
                     </li>
-                    <li>GUI allows educators to upload CSVs and view predictions instantly.</li>
+                    <li>GUI lets educators upload CSVs and see predictions instantly.</li>
                 </ul>
-                <a href="https://github.com/kysgattu/User-Knowledge-Modelling" target="_blank" class="absolute inset-0"
-                   aria-label="GitHub – Knowledge Modelling"></a>
+                <a class="project-link mono" href="https://github.com/kysgattu/User-Knowledge-Modelling"
+                   target="_blank" rel="noopener" aria-label="Student Knowledge Modelling on GitHub">View on GitHub
+                    ↗</a>
             </article>
-            <!-- 10: Online Voting System -->
-            <article
-                    class="group relative overflow-hidden rounded-2xl bg-zinc-800/50 p-6 shadow-md shadow-zinc-900/40 transition-transform hover:-translate-y-1 hover:shadow-lg">
-                <h3 class="text-lg font-bold text-zinc-200">Aadhaar‑Based Online Voting System</h3>
-                <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-300">
-                    <li>Java Servlets/JSP + MySQL platform enabling secure remote voting; 20% turnout increase in
-                        pilot.
-                    </li>
-                    <li>Cut election costs 15% while preserving confidentiality &amp; auditability.</li>
-                </ul>
-                <a href="https://github.com/kysgattu/Aadhaar-Based-Online-Voting-System" target="_blank"
-                   class="absolute inset-0" aria-label="GitHub – Voting"></a>
-            </article>
+        </div>
+    </section>
 
+    <!-- ===== EDUCATION + CERTIFICATIONS ===== -->
+    <section id="education" class="section container">
+        <header class="section-head reveal">
+            <p class="eyebrow mono">// education</p>
+            <h2>Learning, formally &amp; otherwise</h2>
+        </header>
 
+        <div class="edu-grid">
+            <div class="edu-col">
+                <article class="glass spot edu-card reveal">
+                    <p class="mono edu-date">Dec 2023</p>
+                    <h3>M.S. Computer Science</h3>
+                    <p>University of Massachusetts Lowell</p>
+                    <p class="mono edu-gpa">GPA 3.736 / 4</p>
+                </article>
+                <article class="glass spot edu-card reveal">
+                    <p class="mono edu-date">Sep 2020</p>
+                    <h3>B.Tech Computer Science &amp; Engineering</h3>
+                    <p>Jawaharlal Nehru Technological University Hyderabad</p>
+                    <p class="mono edu-gpa">GPA 6.73 / 10</p>
+                </article>
+            </div>
+
+            <div class="glass spot certs reveal">
+                <h3>Certifications</h3>
+                <dl>
+                    <dt class="mono">IBM</dt>
+                    <dd>Generative AI for Software Developers Specialization</dd>
+                    <dd>Generative AI for Data Scientists Specialization</dd>
+                    <dt class="mono">Udemy</dt>
+                    <dd>Informatica PowerCenter - Beginner to Expert Level</dd>
+                    <dd>SQL for Beginners: Learn SQL using MySQL and Database Design</dd>
+                    <dd>Learn Python: The Complete Python Programming Course</dd>
+                    <dd>HTML, CSS &amp; JavaScript - Certification Course for Beginners</dd>
+                    <dt class="mono">Sololearn</dt>
+                    <dd>Introduction to C#</dd>
+                    <dt class="mono">Sahasra SoftTech</dt>
+                    <dd>Core and Advanced Java</dd>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section container">
+        <div class="contact glass reveal">
+            <p class="eyebrow mono">// contact</p>
+            <h2>Let's build something <span class="gradient-text">useful</span>.</h2>
+            <p>
+                Got a lab workflow that needs taming, an ML idea to prototype, or just want to talk shop? My inbox is
+                open.
+            </p>
+            <div class="cta-row cta-center">
+                <a class="btn btn-primary" href="mailto:kysgattu0502@gmail.com">kysgattu0502@gmail.com</a>
+                <a class="btn btn-ghost" href="https://www.linkedin.com/in/kysgattu" target="_blank" rel="noopener">LinkedIn
+                    ↗</a>
+                <a class="btn btn-ghost" href="https://github.com/kysgattu" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
         </div>
     </section>
 </main>
-<footer class="border-t border-zinc-900/60 bg-zinc-950/90 py-10 text-center text-sm text-zinc-500">
-    © <span id="year"></span> Kamal YS Gattu •
-    <a href="mailto:kysgattu0502@gmail.com" style="color:#818CF8;">kysgattu0502@gmail.com</a> •
-    <a href="https://linkedin.com/in/kysgattu" target="_blank" style="color:#818CF8;">LinkedIn</a> •
-    <a href="https://github.com/kysgattu" target="_blank" style="color:#818CF8;">GitHub</a>
+
+<footer class="site-footer">
+    <div class="container footer-inner mono">
+        <span>© <span data-year>2026</span> Kamal YS Gattu</span>
+        <a href="#top">Back to top ↑</a>
+    </div>
 </footer>
-<!-- Year auto-update & small helper classes  -->
-<script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-    // simple utility to render badge pills
-    document.querySelectorAll("ul.flex.flex-wrap.gap-2 > li").forEach((el) => {
-        el.classList.add(
-            "rounded-xl",
-            "bg-zinc-700/70",
-            "px-3",
-            "py-1.5",
-            "shadow",
-            "shadow-black/30"
-        );
-    });
-</script>
-<!-- Tailwind CDN (works on GitHub Pages without a build step) -->
-<script src="https://cdn.tailwindcss.com"></script>
+
+<script src="assets/site.js" defer></script>
 </body>
 </html>
