@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1584" height="396" viewBox="0 0 1584 396" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1584" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#080F1C"/>
+      <stop offset="58%"  stop-color="#0A1525"/>
+      <stop offset="100%" stop-color="#0D1C30"/>
+    </linearGradient>
+    <linearGradient id="fadeR" x1="0" y1="0" x2="700" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#1D9E75" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#1D9E75" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1584" height="396" fill="url(#bg)"/>
+  <rect x="0" y="0" width="4" height="396" fill="#1D9E75"/>
+
+  <circle cx="1260" cy="198" r="230" fill="none" stroke="#1D9E75" stroke-width="0.5" opacity="0.06"/>
+  <circle cx="1260" cy="198" r="175" fill="none" stroke="#1D9E75" stroke-width="0.5" opacity="0.08"/>
+  <circle cx="1260" cy="198" r="118" fill="none" stroke="#378ADD" stroke-width="0.5" opacity="0.08"/>
+
+  <line x1="1260" y1="198" x2="1260" y2="88"  stroke="#1D9E75" stroke-width="0.8" opacity="0.4"/>
+  <line x1="1260" y1="198" x2="1355" y2="143" stroke="#378ADD" stroke-width="0.8" opacity="0.4"/>
+  <line x1="1260" y1="198" x2="1355" y2="253" stroke="#378ADD" stroke-width="0.8" opacity="0.4"/>
+  <line x1="1260" y1="198" x2="1260" y2="308" stroke="#1D9E75" stroke-width="0.8" opacity="0.4"/>
+  <line x1="1260" y1="198" x2="1165" y2="253" stroke="#1D9E75" stroke-width="0.8" opacity="0.4"/>
+  <line x1="1260" y1="198" x2="1165" y2="143" stroke="#1D9E75" stroke-width="0.8" opacity="0.4"/>
+  <line x1="1260" y1="88"  x2="1355" y2="143" stroke="#4A6080" stroke-width="0.5" opacity="0.3"/>
+  <line x1="1355" y1="143" x2="1355" y2="253" stroke="#4A6080" stroke-width="0.5" opacity="0.3"/>
+  <line x1="1355" y1="253" x2="1260" y2="308" stroke="#4A6080" stroke-width="0.5" opacity="0.3"/>
+  <line x1="1260" y1="308" x2="1165" y2="253" stroke="#4A6080" stroke-width="0.5" opacity="0.3"/>
+  <line x1="1165" y1="253" x2="1165" y2="143" stroke="#4A6080" stroke-width="0.5" opacity="0.3"/>
+  <line x1="1165" y1="143" x2="1260" y2="88"  stroke="#4A6080" stroke-width="0.5" opacity="0.3"/>
+  <line x1="1260" y1="88"  x2="1352" y2="22"  stroke="#1D9E75" stroke-width="0.5" opacity="0.2"/>
+  <line x1="1260" y1="88"  x2="1168" y2="22"  stroke="#1D9E75" stroke-width="0.5" opacity="0.2"/>
+  <line x1="1355" y1="143" x2="1442" y2="198" stroke="#378ADD" stroke-width="0.5" opacity="0.2"/>
+  <line x1="1355" y1="253" x2="1442" y2="198" stroke="#378ADD" stroke-width="0.5" opacity="0.2"/>
+  <line x1="1355" y1="253" x2="1352" y2="374" stroke="#4A6080" stroke-width="0.5" opacity="0.15"/>
+  <line x1="1260" y1="308" x2="1352" y2="374" stroke="#4A6080" stroke-width="0.5" opacity="0.15"/>
+  <line x1="1260" y1="308" x2="1168" y2="374" stroke="#4A6080" stroke-width="0.5" opacity="0.15"/>
+  <line x1="1165" y1="253" x2="1168" y2="374" stroke="#4A6080" stroke-width="0.5" opacity="0.15"/>
+  <line x1="1165" y1="143" x2="1078" y2="198" stroke="#1D9E75" stroke-width="0.5" opacity="0.2"/>
+  <line x1="1165" y1="253" x2="1078" y2="198" stroke="#1D9E75" stroke-width="0.5" opacity="0.2"/>
+  <line x1="1442" y1="198" x2="1492" y2="82"  stroke="#378ADD" stroke-width="0.4" opacity="0.15"/>
+  <line x1="1442" y1="198" x2="1492" y2="314" stroke="#378ADD" stroke-width="0.4" opacity="0.15"/>
+
+  <circle cx="1260" cy="198" r="20" fill="#080F1C" stroke="#1D9E75" stroke-width="2"/>
+  <circle cx="1260" cy="198" r="9"  fill="#1D9E75"/>
+  <circle cx="1260" cy="88"  r="13" fill="#080F1C" stroke="#1D9E75" stroke-width="1.5"/>
+  <circle cx="1260" cy="88"  r="5"  fill="#1D9E75" opacity="0.85"/>
+  <circle cx="1355" cy="143" r="13" fill="#080F1C" stroke="#378ADD" stroke-width="1.5"/>
+  <circle cx="1355" cy="143" r="5"  fill="#378ADD" opacity="0.85"/>
+  <circle cx="1355" cy="253" r="13" fill="#080F1C" stroke="#378ADD" stroke-width="1.5"/>
+  <circle cx="1355" cy="253" r="5"  fill="#378ADD" opacity="0.85"/>
+  <circle cx="1260" cy="308" r="13" fill="#080F1C" stroke="#1D9E75" stroke-width="1.5"/>
+  <circle cx="1260" cy="308" r="5"  fill="#1D9E75" opacity="0.85"/>
+  <circle cx="1165" cy="253" r="13" fill="#080F1C" stroke="#1D9E75" stroke-width="1.5"/>
+  <circle cx="1165" cy="253" r="5"  fill="#1D9E75" opacity="0.85"/>
+  <circle cx="1165" cy="143" r="13" fill="#080F1C" stroke="#1D9E75" stroke-width="1.5"/>
+  <circle cx="1165" cy="143" r="5"  fill="#1D9E75" opacity="0.85"/>
+  <circle cx="1352" cy="22"  r="7" fill="#080F1C" stroke="#1D9E75" stroke-width="1"/>
+  <circle cx="1352" cy="22"  r="3" fill="#1D9E75" opacity="0.7"/>
+  <circle cx="1168" cy="22"  r="7" fill="#080F1C" stroke="#1D9E75" stroke-width="1"/>
+  <circle cx="1168" cy="22"  r="3" fill="#1D9E75" opacity="0.7"/>
+  <circle cx="1442" cy="198" r="9" fill="#080F1C" stroke="#378ADD" stroke-width="1"/>
+  <circle cx="1442" cy="198" r="4" fill="#378ADD" opacity="0.7"/>
+  <circle cx="1078" cy="198" r="9" fill="#080F1C" stroke="#1D9E75" stroke-width="1"/>
+  <circle cx="1078" cy="198" r="4" fill="#1D9E75" opacity="0.7"/>
+  <circle cx="1352" cy="374" r="6" fill="#080F1C" stroke="#4A6080" stroke-width="1"/>
+  <circle cx="1352" cy="374" r="2" fill="#4A6080" opacity="0.5"/>
+  <circle cx="1168" cy="374" r="6" fill="#080F1C" stroke="#4A6080" stroke-width="1"/>
+  <circle cx="1168" cy="374" r="2" fill="#4A6080" opacity="0.5"/>
+  <circle cx="1492" cy="82"  r="5" fill="#378ADD" opacity="0.28"/>
+  <circle cx="1510" cy="198" r="5" fill="#1D9E75" opacity="0.2"/>
+  <circle cx="1492" cy="314" r="4" fill="#4A6080" opacity="0.25"/>
+  <circle cx="1548" cy="138" r="3" fill="#378ADD" opacity="0.2"/>
+  <circle cx="1555" cy="258" r="3" fill="#1D9E75" opacity="0.18"/>
+
+  <!-- Node labels — 8 nodes: 6 inner ring + 2 side nodes -->
+  <!-- Inner ring (6) -->
+  <text x="1260" y="71"  text-anchor="middle" fill="#3D5572" font-size="10" font-family="system-ui,-apple-system,sans-serif">Python</text>
+  <text x="1382" y="138" text-anchor="start"  fill="#3D5572" font-size="10" font-family="system-ui,-apple-system,sans-serif">CompVision</text>
+  <text x="1382" y="260" text-anchor="start"  fill="#3D5572" font-size="10" font-family="system-ui,-apple-system,sans-serif">AI</text>
+  <text x="1260" y="332" text-anchor="middle" fill="#3D5572" font-size="10" font-family="system-ui,-apple-system,sans-serif">Data Engg</text>
+  <text x="1138" y="273" text-anchor="end"    fill="#3D5572" font-size="10" font-family="system-ui,-apple-system,sans-serif">Automation</text>
+  <text x="1138" y="138" text-anchor="end"    fill="#3D5572" font-size="10" font-family="system-ui,-apple-system,sans-serif">NLP</text>
+  <!-- Side nodes (2) — right=ML, left=AgenticAI -->
+  <text x="1455" y="202" text-anchor="start"  fill="#3D5572" font-size="10" font-family="system-ui,-apple-system,sans-serif">ML</text>
+  <text x="1066" y="202" text-anchor="end"    fill="#3D5572" font-size="10" font-family="system-ui,-apple-system,sans-serif">AgenticAI</text>
+
+  <line x1="900" y1="44" x2="900" y2="352" stroke="#162030" stroke-width="1"/>
+
+  <!-- ── LEFT CONTENT ─────────────────────────────────────────── -->
+
+  <text x="80" y="54"
+        fill="#1D9E75" font-size="11" font-family="system-ui,-apple-system,sans-serif"
+        letter-spacing="2.8" font-weight="500">SOFTWARE SYSTEMS ENGINEER  ·  HOOKE LABORATORIES, LAWRENCE MA</text>
+
+  <line x1="80" y1="66" x2="590" y2="66" stroke="url(#fadeR)" stroke-width="0.8"/>
+
+  <text x="80" y="123"
+        fill="#FFFFFF" font-size="48" font-family="system-ui,-apple-system,sans-serif"
+        font-weight="700" letter-spacing="-2">KAMAL YESHODHAR SHASTRY</text>
+
+  <text x="87" y="155"
+        fill="#8DA3BB" font-size="19" font-family="system-ui,-apple-system,sans-serif"
+        font-weight="300" letter-spacing="7">GATTU</text>
+
+  <line x1="80" y1="173" x2="830" y2="173" stroke="url(#fadeR)" stroke-width="0.8"/>
+
+  <text x="80" y="197"
+        fill="#C0CDD9" font-size="15" font-family="system-ui,-apple-system,sans-serif"
+        letter-spacing="0.4">Python  ·  Machine Learning  ·  Data Engineering  ·  Systems Automation</text>
+
+  <text x="80" y="219"
+        fill="#2E4460" font-size="11" font-family="system-ui,-apple-system,sans-serif"
+        letter-spacing="1.5">M.S. COMPUTER SCIENCE  ·  UNIVERSITY OF MASSACHUSETTS LOWELL</text>
+
+  <!-- ── CHIPS ROW 1 ─────────────────────────────────────────────
+       Widths sized to text, positions cascade with 10px gaps
+       Python(76) PyTorch(82) Pandas(76) OpenCV(80) Flask(68) MySQL(68) Linux(68) Apps Script(106)
+       x: 80  166  258  344  434  512  590  668
+  -->
+  <rect x="80"  y="235" width="76"  height="26" rx="13" fill="none" stroke="#1D9E75" stroke-width="1"/>
+  <text x="118" y="252" text-anchor="middle" fill="#1D9E75" font-size="11" font-family="system-ui,sans-serif" font-weight="500">Python</text>
+
+  <rect x="166" y="235" width="82"  height="26" rx="13" fill="none" stroke="#378ADD" stroke-width="1"/>
+  <text x="207" y="252" text-anchor="middle" fill="#378ADD" font-size="11" font-family="system-ui,sans-serif" font-weight="500">PyTorch</text>
+
+  <rect x="258" y="235" width="76"  height="26" rx="13" fill="none" stroke="#1D9E75" stroke-width="1" opacity="0.75"/>
+  <text x="296" y="252" text-anchor="middle" fill="#1D9E75" font-size="11" font-family="system-ui,sans-serif" font-weight="500" opacity="0.75">Pandas</text>
+
+  <rect x="344" y="235" width="80"  height="26" rx="13" fill="none" stroke="#378ADD" stroke-width="1" opacity="0.75"/>
+  <text x="384" y="252" text-anchor="middle" fill="#378ADD" font-size="11" font-family="system-ui,sans-serif" font-weight="500" opacity="0.75">OpenCV</text>
+
+  <rect x="434" y="235" width="68"  height="26" rx="13" fill="none" stroke="#1D9E75" stroke-width="1" opacity="0.75"/>
+  <text x="468" y="252" text-anchor="middle" fill="#1D9E75" font-size="11" font-family="system-ui,sans-serif" font-weight="500" opacity="0.75">Flask</text>
+
+  <rect x="512" y="235" width="68"  height="26" rx="13" fill="none" stroke="#378ADD" stroke-width="1" opacity="0.75"/>
+  <text x="546" y="252" text-anchor="middle" fill="#378ADD" font-size="11" font-family="system-ui,sans-serif" font-weight="500" opacity="0.75">MySQL</text>
+
+  <rect x="590" y="235" width="106" height="26" rx="13" fill="none" stroke="#378ADD" stroke-width="1" opacity="0.75"/>
+  <text x="643" y="252" text-anchor="middle" fill="#378ADD" font-size="11" font-family="system-ui,sans-serif" font-weight="500" opacity="0.75">Apps Script</text>
+
+  <rect x="706" y="235" width="88"  height="26" rx="13" fill="none" stroke="#1D9E75" stroke-width="1" opacity="0.75"/>
+  <text x="750" y="252" text-anchor="middle" fill="#1D9E75" font-size="11" font-family="system-ui,sans-serif" font-weight="500" opacity="0.75">REST API</text>
+
+  <!-- ── CHIPS ROW 2 ─────────────────────────────────────────────
+       YOLO(60) DeepLabCut(96) HuggingFace(100) Raspberry Pi(106) MariaDB(78) Scikit-learn(106)
+       x: 80  150  256  366  482  570
+  -->
+  <rect x="80"  y="271" width="60"  height="24" rx="12" fill="none" stroke="#1D9E75" stroke-width="0.75" opacity="0.45"/>
+  <text x="110" y="287" text-anchor="middle" fill="#1D9E75" font-size="10" font-family="system-ui,sans-serif" opacity="0.45">YOLO</text>
+
+  <rect x="150" y="271" width="96"  height="24" rx="12" fill="none" stroke="#378ADD" stroke-width="0.75" opacity="0.45"/>
+  <text x="198" y="287" text-anchor="middle" fill="#378ADD" font-size="10" font-family="system-ui,sans-serif" opacity="0.45">DeepLabCut</text>
+
+  <rect x="256" y="271" width="100" height="24" rx="12" fill="none" stroke="#1D9E75" stroke-width="0.75" opacity="0.45"/>
+  <text x="306" y="287" text-anchor="middle" fill="#1D9E75" font-size="10" font-family="system-ui,sans-serif" opacity="0.45">HuggingFace</text>
+
+  <rect x="366" y="271" width="106" height="24" rx="12" fill="none" stroke="#378ADD" stroke-width="0.75" opacity="0.45"/>
+  <text x="419" y="287" text-anchor="middle" fill="#378ADD" font-size="10" font-family="system-ui,sans-serif" opacity="0.45">Raspberry Pi</text>
+
+  <rect x="482" y="271" width="78"  height="24" rx="12" fill="none" stroke="#1D9E75" stroke-width="0.75" opacity="0.45"/>
+  <text x="521" y="287" text-anchor="middle" fill="#1D9E75" font-size="10" font-family="system-ui,sans-serif" opacity="0.45">MariaDB</text>
+
+  <rect x="570" y="271" width="106" height="24" rx="12" fill="none" stroke="#378ADD" stroke-width="0.75" opacity="0.45"/>
+  <text x="623" y="287" text-anchor="middle" fill="#378ADD" font-size="10" font-family="system-ui,sans-serif" opacity="0.45">Scikit-learn</text>
+
+  <rect x="686" y="271" width="68"  height="24" rx="12" fill="none" stroke="#1D9E75" stroke-width="0.75" opacity="0.45"/>
+  <text x="720" y="287" text-anchor="middle" fill="#1D9E75" font-size="10" font-family="system-ui,sans-serif" opacity="0.45">Linux</text>
+
+</svg>
